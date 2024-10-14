@@ -86,6 +86,9 @@ a {
     box-shadow: -3px -3px 10px 0px rgba(0, 0, 0, 0.08);
 
     border-radius: 10px;
+
+    width: 317px !important;
+    height: 455px !important;
 }
 
 .swiper-slide img {
@@ -99,7 +102,11 @@ a {
     display: none;
 }
 
-.swiper-slide_block {}
+.swiper-slide_block {
+    width: 317px;
+    height: 455px;
+    border: solid;
+}
 
 
 
