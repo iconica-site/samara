@@ -151,7 +151,7 @@ footer {
         justify-content: center;
     }
 
-    .footer_row_one_block_form, .header_link_form {
+    .footer_row_one_block_form, .footer_header_link_form {
         width: 335px;
         height: 45px;
     }
