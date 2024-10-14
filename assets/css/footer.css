@@ -100,3 +100,106 @@ footer {
 
 
 }
+
+.footer_conf {
+    display: none;
+}
+
+/*adaptive*/
+
+@media (max-width:1365px) {
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width:1140px ) {
+    .footer_row_one {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_icons_block div {
+        flex-direction: row-reverse;
+        gap: 5px;
+    }
+    .header_icons_block a {
+        flex-direction: column-reverse;
+    }
+    .footer_row_one {
+        padding-top: 30px;
+        padding-bottom: 90px;
+    }
+    .header_icons_block div img {
+        width: 20px;
+        height: 20px;
+    }
+    .header_icons_block div img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer_logo {
+        width: 45px;
+        height: 50px;
+    }
+    .footer_row_one_block {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        gap: 10px;
+        height: auto;
+    }
+    .header_icons {
+        justify-content: center;
+    }
+
+    .footer_row_one_block_form, .header_link_form {
+        width: 335px;
+        height: 45px;
+    }
+
+
+    .footer_row_two {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer_row_two_social div {
+        position: relative;
+        top: -125px;
+    }
+    .conf_polit {
+        margin: 0;
+    }
+    .footer_row_two_social {
+        height: 1px;
+    }
+
+    .footer_row_two_link a {
+        color: rgba(174, 174, 174, 1);
+    }
+
+    .conf_polit {
+        display: none;
+
+    }
+
+    .footer_row_two_social p {
+        display: none;
+    }
+
+    .footer_conf {
+        display: block;
+        margin-top: 10px;
+    }
+    .conf_polit2 {
+        color: rgba(92, 186, 234, 1);
+        border-bottom: 1px solid rgba(92, 186, 234, 1);
+
+    }
+    .conf_polit_p {
+        color: rgba(92, 186, 234, 1);
+    }
+
+}
+
+
+
+

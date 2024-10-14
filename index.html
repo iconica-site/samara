@@ -53,13 +53,7 @@
             <div class="header_right_menu">
 
 
-                <!-- <a class="header_right_menu_link" href="">Телефоны 
-                    <div>
-                        <i class="fi fi-rs-triangle"></i>
-                        
-                       
-                    </div>
-                </a> -->
+                
 
                 <div class="dropdown">
                     <a href="/" class="dropbtn header_right_menu_link">Телефоны</a>
@@ -81,7 +75,7 @@
                   </div> 
 
                   <div class="dropdown">
-                    <a href="/" class="dropbtn header_right_menu_link">О нас</a>
+                    <a href="/o-nas/o-nas.html" class="dropbtn header_right_menu_link">О нас</a>
                     <div class="dropdown-content">
                       <a href="#">О поликлиннике</a>
                       <a href="#">Новости</a>
@@ -97,7 +91,7 @@
                   </div> 
 
                   <div class="dropdown">
-                    <a href="/" class="dropbtn header_right_menu_link">Пациентам</a>
+                    <a href="/pacientam/pacientam.html" class="dropbtn header_right_menu_link">Пациентам</a>
                     <div class="dropdown-content">
                       <a href="#">Общая информация</a>
                       <a href="#">Вопрос-ответ</a>
@@ -108,7 +102,7 @@
                       <a href="#">Права и обязанности граждан в сфере охраны здоровья</a>
                       <a href="#">Правила поведения для пациентов и посетителей</a>
                       <a href="#">Лекарственное обеспечение</a>
-                      <a style="color: rgba(92, 186, 234, 1);" href="#">Смотреть больше...</a>
+                      <a style="color: rgba(92, 186, 234, 1);" href="/pacientam/pacientam.html">Смотреть больше...</a>
                     </div>
                   </div> 
 
@@ -426,7 +420,7 @@
                             <img src="/assets/img/sert1.png" alt="">
                             <img src="/assets/img/sert2.png" alt="">
                         </div>
-                        <img src="/assets/img/logo.png" alt="">
+                        <img class="footer_logo" src="/assets/img/logo.png" alt="">
                     </a>
                 </div>
 
@@ -477,7 +471,7 @@
 
                 <a class="conf_polit" href="">Политика конфидециальности</a>
 
-                <p>Все права защищены. © 2024 </p>
+                <p class="conf_polit_p">Все права защищены. © 2024 </p>
             </div>
 
             <!-- <div class="footer_row_two_block3"></div> -->
@@ -487,7 +481,15 @@
         <div class="footer_row_three">
             
 Информация, размещенная на данном сайте, не является публичной офертой в смысле статьи 435 Гражданского Кодекса Российской Федерации, носит исключительно информационно-вспомогательный характер и не предполагается для использования в коммерческих целях. Использование, информации, размещенной на данном сайте, в том числе с указанием данного сайта в качестве информационного источника без письменного согласия ГБУЗ СО СГП No6 Промышленного района запрещено. Любые риски, связанные с использованием информации, размещенной на данном сайте, несут исключительно посетители сайта.
+<div class="footer_conf">
+    <a class="conf_polit2" href="">Политика конфидециальности</a>
+
+    <p class="conf_polit_p">Все права защищены. © 2024 </p>
+</div>
         </div>
+
+
+
 
 
     </footer>
@@ -531,6 +533,19 @@ document.querySelector('.next').addEventListener('click', function() {
         clickable: true,
       },
       initialSlide: 1, 
+
+    //    breakpoints: {
+    //     // Когда ширина экрана будет меньше или равна 1140px
+    //     1140: {
+    //         slidesPerView: 2, // Устанавливаем 2 слайда
+    //         spaceBetween: 20, // Измените расстояние, если необходимо
+    //     },
+    //     // Вы можете добавить другие breakpoint'ы для разных размеров экрана
+    //     768: {
+    //         slidesPerView: 1, // Устанавливаем 1 слайд для меньших экранов
+    //     },
+    // },
+
     });
 
     </script>
