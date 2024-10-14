@@ -64,3 +64,12 @@
 .doctor_text ul {
     margin-left: 25px;
 }
+@media screen and (max-width: 850px) {
+    .doctor_card {
+        flex-direction: column;
+        height: auto;
+    }
+    .doctor_card img {
+        width: 90%;
+    }
+}

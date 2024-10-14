@@ -24,3 +24,40 @@
 .docs_container h4 {
     margin-left: 15px;
 }
+
+@media screen and (max-width: 850px) {
+    .docs_container {
+        justify-content: center;
+    }
+    .list_find_block_list {
+        max-width: none;
+    }
+    .list_find_block_list select {
+        max-width: none;
+    }
+    .list_find_block {
+        flex-direction: column;
+    }
+    .list_find_block_search {
+        max-width: none;
+        width: 95%;
+    }
+    .list_find_block_search input {
+        max-width: none;
+    }
+    .swiper-slide_block img {
+        width: 373px;
+        height: 342px;
+    }
+    .docs_container_block {
+        max-width: 400px;
+        height: 550px;
+        width: 100%;
+    }
+
+    .doctor_card {
+        flex-direction: column;
+        height: auto;
+    }
+    
+}

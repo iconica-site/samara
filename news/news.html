@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вопрос-ответ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-media.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style-media.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <style>
@@ -16,6 +22,172 @@
 </style>
 
 <body>
+    <header>
+        <nav>
+            <div class="header_icons">
+                <div class="header_icons_block">
+                    <a href="/">
+                        <div>
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
+                        </div>
+                        <img src="../assets/img/logo.png" alt="">
+                    </a>
+                </div>
+
+
+                <div class="header_icons_block">
+                    <p>Самарская городская поликлиника <br> N6 Промышленного района</p>
+                    <p>Государственное бюджетное учреждение <br> здравоохранения Самарской области</p>
+                </div>
+
+                <div class="header_icons_block_mobile">
+                    <img src="../assets/img/Снимок экрана 2024-10-14 165701.png">
+                    <img src="../assets/img/Снимок экрана 2024-10-14 165706.png">
+                </div>
+
+            </div>
+            <div class="header_right_menu">
+
+
+                <!-- <a class="header_right_menu_link" href="">Телефоны 
+                    <div>
+                        <i class="fi fi-rs-triangle"></i>
+                        
+                       
+                    </div>
+                </a> -->
+
+                <div class="dropdown">
+                    <a href="/" class="dropbtn header_right_menu_link">Телефоны</a>
+                    <div class="dropdown-content dropdown-content_tel">
+                      <p>Для записи на прием</p>
+                      <span><a href="tel:88462500565">8(846)250-05-65</a></span>
+
+                      <p>Платное отделение</p>
+                      <span><a href="tel:88462500565">8(846)250-05-65</a></span>
+
+                      <p>ДМС</p>
+                      <span><a href="tel:88462500565">8(846)250-05-65</a></span>
+
+                      <p>ОМС</p>
+                      <span><a href="tel:88462500565">8(846)250-05-65</a></span>
+
+
+                    </div>
+                  </div> 
+
+                  <div class="dropdown">
+                    <a href="/" class="dropbtn header_right_menu_link">О нас</a>
+                    <div class="dropdown-content">
+                      <a href="#">О поликлиннике</a>
+                      <a href="#">Новости</a>
+                      <a href="#">Свидетельство о регистрации</a>
+                      <a href="#">Сертификаты</a>
+                      <a href="#">Вакансии</a>
+                      <a href="#">Лицензия</a>
+                      <a href="#">Политика конфидециальности</a>
+                      <a href="#">Наши достижения</a>
+                      <a href="#">Контакты</a>
+                      <a href="#">Приказ об организации платных услуг</a>
+                    </div>
+                  </div> 
+
+                  <div class="dropdown">
+                    <a href="/" class="dropbtn header_right_menu_link">Пациентам</a>
+                    <div class="dropdown-content">
+                      <a href="#">Общая информация</a>
+                      <a href="#">Вопрос-ответ</a>
+                      <a href="#">Дежурные врачи</a>
+                      <a href="#">Изменения в расписании</a>
+                      <a href="#">Порядок записи на прием к врачу</a>
+                      <a href="#">Порядок госпитализации</a>
+                      <a href="#">Права и обязанности граждан в сфере охраны здоровья</a>
+                      <a href="#">Правила поведения для пациентов и посетителей</a>
+                      <a href="#">Лекарственное обеспечение</a>
+                      <a style="color: rgba(92, 186, 234, 1);" href="#">Смотреть больше...</a>
+                    </div>
+                  </div> 
+
+
+
+                
+                <div><a class="header_link_form" href="">Записаться на прием</a></div>
+            </div>
+        </nav>
+        <div class="header-services-and-poisk-group">
+            <div class="swiper-container header_services_mobile">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic1.png" alt=""></div>
+                        <p>Платные услуги</p>
+                    </a>
+                    <a href="/vrachi/vrachi.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic2.png" alt=""></div>
+                        <p>Врачи</p>
+                    </a>
+        
+                    <a href="/price/price.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic3.png" alt=""></div>
+                        <p>Цены</p>
+                    </a>
+        
+                    <a href="/akcii/akcii.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic4.png" alt=""></div>
+                        <p>Акции</p>
+                    </a>
+        
+                    <a href="" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic5.png" alt=""></div>
+                        <p>ОМС</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header_services">
+                <a href="/services/services.html" class="header_services_block">
+                    <div><img src="../assets/img/ic1.png" alt=""></div>
+                    <p>Платные услуги</p>
+                </a>
+
+                <a href="/vrachi/vrachi.html" class="header_services_block">
+                    <div><img src="../assets/img/ic2.png" alt=""></div>
+                    <p>Врачи</p>
+                </a>
+
+                <a href="/price/price.html" class="header_services_block">
+                    <div><img src="../assets/img/ic3.png" alt=""></div>
+                    <p>Цены</p>
+                </a>
+
+                <a href="/akcii/akcii.html" class="header_services_block">
+                    <div><img src="../assets/img/ic4.png" alt=""></div>
+                    <p>Акции</p>
+                </a>
+
+                <a href="" class="header_services_block">
+                    <div><img src="../assets/img/ic5.png" alt=""></div>
+                    <p>ОМС</p>
+                </a>
+            </div>
+
+            <div class="header_bottom_menu">
+
+                <div class="header_search">
+                    <input placeholder="Поиск по сайту" type="text">
+                    
+                </div>
+
+                <!-- <div class="header_bad_vision">
+                    <a href="">Версия для слабовидящих</a>
+                </div> -->
+
+            </div>
+        </div>
+
+
+    </header>
+
     <div class="bread-crumbs-content">
         <div class="bread-crumbs">
             <a>Главная</a>
@@ -30,7 +202,7 @@
             <div class="news-content">
                 <div class="news-block">
                     <div class="news-block-left">
-                        <img src="img/image3.png">
+                        <img src="../assets/img/image3.png">
                     </div>
                     <div class="news-block-right">
                         <div class="news-head">
@@ -50,7 +222,7 @@
 
                 <div class="news-block">
                     <div class="news-block-left">
-                        <img src="img/image3.png">
+                        <img src="../assets/img/image3.png">
                     </div>
                     <div class="news-block-right">
                         <div class="news-head">
@@ -70,7 +242,7 @@
 
                 <div class="news-block">
                     <div class="news-block-left">
-                        <img src="img/image3.png">
+                        <img src="../assets/img/image3.png">
                     </div>
                     <div class="news-block-right">
                         <div class="news-head">
@@ -90,7 +262,7 @@
 
                 <div class="news-block">
                     <div class="news-block-left">
-                        <img src="img/image3.png">
+                        <img src="../assets/img/image3.png">
                     </div>
                     <div class="news-block-right">
                         <div class="news-head">
@@ -144,6 +316,100 @@
             </ul>
         </div>
     </div>
+
+    <footer>
+
+        <div class="footer_row_one">
+
+
+            <div class="header_icons">
+                <div class="header_icons_block">
+                    <a href="/">
+                        <div>
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
+                        </div>
+                        <img src="../assets/img/logo.png" alt="">
+                    </a>
+                </div>
+
+
+                <div class="header_icons_block">
+                    <p>Самарская городская поликлиника <br> N6 Промышленного района</p>
+                    <p>Государственное бюджетное учреждение <br> здравоохранения Самарской области</p>
+                </div>
+
+            </div>
+
+            <div class="footer_row_one_block">
+                <a class="footer_row_one_block_tel" href="">8(846) 250-05-65</a>
+                <div><a class="footer_row_one_block_form" href="">Позвоните мне</a></div>
+                <div><a class="header_link_form" href="">Записаться на прием</a></div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="footer_row_two">
+
+            <div class="footer_row_two_link">
+                <div class="footer_row_two_block">
+                    <a href="">О нас</a>
+                    <a href="">Услуги ОМС</a>
+                    <a href="">Пациентам</a>
+                    <a href="">Контакты</a>
+                </div>
+    
+                <div class="footer_row_two_block">
+                    <a href="">Врачи</a>
+                    <a href="">Цены</a>
+                    <a href="">Акции</a>
+                    <a href="">Платные услуги</a>
+                </div>
+            </div>
+
+            <div class="footer_row_two_social">
+                <div>
+                    <a href=""><img src="../assets/img/wsapp.png" alt=""></a>
+                    <a href=""><img src="../assets/img/tg.png" alt=""></a>
+                    <a href=""><img src="../assets/img/vk.png" alt=""></a>
+                </div>
+
+                <a class="conf_polit" href="">Политика конфидециальности</a>
+
+                <p>Все права защищены. © 2024 </p>
+            </div>
+
+            <!-- <div class="footer_row_two_block3"></div> -->
+        </div>
+
+
+        <div class="footer_row_three">
+            
+Информация, размещенная на данном сайте, не является публичной офертой в смысле статьи 435 Гражданского Кодекса Российской Федерации, носит исключительно информационно-вспомогательный характер и не предполагается для использования в коммерческих целях. Использование, информации, размещенной на данном сайте, в том числе с указанием данного сайта в качестве информационного источника без письменного согласия ГБУЗ СО СГП No6 Промышленного района запрещено. Любые риски, связанные с использованием информации, размещенной на данном сайте, несут исключительно посетители сайта.
+        </div>
+
+
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+
+var swiper1 = new Swiper('.header_services_mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+</script>
     
 
 </body>

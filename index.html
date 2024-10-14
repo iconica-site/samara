@@ -30,30 +30,42 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="header_icons">
-                <div class="header_icons_block ">
-                    <a style="flex-direction: row;" class="header_img_block header_img_block_header" href="/">
-                        <div style="flex-direction: column;">
-                            <img style="width: 38px; height: 38px;" src="/assets/img/sert1.png" alt="">
-                            <img style="width: 38px; height: 38px;" src="/assets/img/sert2.png" alt="">
+                <div class="header_icons_block">
+                    <a href="/">
+                        <div>
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
                         </div>
-                        <img class="header_icon" src="/assets/img/logo.png" alt="">
+                        <img src="../assets/img/logo.png" alt="">
                     </a>
                 </div>
 
 
-                <div class="header_icons_block header_icons_block_header">
+                <div class="header_icons_block">
                     <p>Самарская городская поликлиника <br> N6 Промышленного района</p>
                     <p>Государственное бюджетное учреждение <br> здравоохранения Самарской области</p>
+                </div>
+
+                <div class="header_icons_block_mobile">
+                    <img src="../assets/img/Снимок экрана 2024-10-14 165701.png">
+                    <img src="../assets/img/Снимок экрана 2024-10-14 165706.png">
                 </div>
 
             </div>
             <div class="header_right_menu">
 
 
-                
+                <!-- <a class="header_right_menu_link" href="">Телефоны 
+                    <div>
+                        <i class="fi fi-rs-triangle"></i>
+                        
+                       
+                    </div>
+                </a> -->
 
                 <div class="dropdown">
                     <a href="/" class="dropbtn header_right_menu_link">Телефоны</a>
@@ -75,7 +87,7 @@
                   </div> 
 
                   <div class="dropdown">
-                    <a href="/o-nas/o-nas.html" class="dropbtn header_right_menu_link">О нас</a>
+                    <a href="/" class="dropbtn header_right_menu_link">О нас</a>
                     <div class="dropdown-content">
                       <a href="#">О поликлиннике</a>
                       <a href="#">Новости</a>
@@ -91,7 +103,7 @@
                   </div> 
 
                   <div class="dropdown">
-                    <a href="/pacientam/pacientam.html" class="dropbtn header_right_menu_link">Пациентам</a>
+                    <a href="/" class="dropbtn header_right_menu_link">Пациентам</a>
                     <div class="dropdown-content">
                       <a href="#">Общая информация</a>
                       <a href="#">Вопрос-ответ</a>
@@ -102,7 +114,7 @@
                       <a href="#">Права и обязанности граждан в сфере охраны здоровья</a>
                       <a href="#">Правила поведения для пациентов и посетителей</a>
                       <a href="#">Лекарственное обеспечение</a>
-                      <a style="color: rgba(92, 186, 234, 1);" href="/pacientam/pacientam.html">Смотреть больше...</a>
+                      <a style="color: rgba(92, 186, 234, 1);" href="#">Смотреть больше...</a>
                     </div>
                   </div> 
 
@@ -111,53 +123,75 @@
                 
                 <div><a class="header_link_form" href="">Записаться на прием</a></div>
             </div>
-
-            <div class="header_burger">
-                <a class="bad_vision" href=""><img src="/assets/img/vision.png" alt=""></a>
-            </div>
-
-            
         </nav>
-
-
-        <div class="header_services">
-            <a href="/services/services.html" class="header_services_block">
-                <div><img src="assets/img/ic1.png" alt=""></div>
-                <p>Платные услуги</p>
-            </a>
-
-            <a href="/vrachi/vrachi.html" class="header_services_block">
-                <div><img src="assets/img/ic2.png" alt=""></div>
-                <p>Врачи</p>
-            </a>
-
-            <a href="/price/price.html" class="header_services_block">
-                <div><img src="assets/img/ic3.png" alt=""></div>
-                <p>Цены</p>
-            </a>
-
-            <a href="/akcii/akcii.html" class="header_services_block">
-                <div><img src="assets/img/ic4.png" alt=""></div>
-                <p>Акции</p>
-            </a>
-
-            <a href="" class="header_services_block">
-                <div><img src="assets/img/ic5.png" alt=""></div>
-                <p>ОМС</p>
-            </a>
-        </div>
-
-        <div class="header_bottom_menu">
-
-            <div class="header_search">
-                <input placeholder="Поиск по сайту" type="text">
-                
+        <div class="header-services-and-poisk-group">
+            <div class="swiper-container header_services_mobile">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic1.png" alt=""></div>
+                        <p>Платные услуги</p>
+                    </a>
+                    <a href="/vrachi/vrachi.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic2.png" alt=""></div>
+                        <p>Врачи</p>
+                    </a>
+        
+                    <a href="/price/price.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic3.png" alt=""></div>
+                        <p>Цены</p>
+                    </a>
+        
+                    <a href="/akcii/akcii.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic4.png" alt=""></div>
+                        <p>Акции</p>
+                    </a>
+        
+                    <a href="" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic5.png" alt=""></div>
+                        <p>ОМС</p>
+                    </a>
+                </div>
             </div>
 
-            <!-- <div class="header_bad_vision">
-                <a href="">Версия для слабовидящих</a>
-            </div> -->
+            <div class="header_services">
+                <a href="/services/services.html" class="header_services_block">
+                    <div><img src="../assets/img/ic1.png" alt=""></div>
+                    <p>Платные услуги</p>
+                </a>
 
+                <a href="/vrachi/vrachi.html" class="header_services_block">
+                    <div><img src="../assets/img/ic2.png" alt=""></div>
+                    <p>Врачи</p>
+                </a>
+
+                <a href="/price/price.html" class="header_services_block">
+                    <div><img src="../assets/img/ic3.png" alt=""></div>
+                    <p>Цены</p>
+                </a>
+
+                <a href="/akcii/akcii.html" class="header_services_block">
+                    <div><img src="../assets/img/ic4.png" alt=""></div>
+                    <p>Акции</p>
+                </a>
+
+                <a href="" class="header_services_block">
+                    <div><img src="../assets/img/ic5.png" alt=""></div>
+                    <p>ОМС</p>
+                </a>
+            </div>
+
+            <div class="header_bottom_menu">
+
+                <div class="header_search">
+                    <input placeholder="Поиск по сайту" type="text">
+                    
+                </div>
+
+                <!-- <div class="header_bad_vision">
+                    <a href="">Версия для слабовидящих</a>
+                </div> -->
+
+            </div>
         </div>
 
 
@@ -441,7 +475,7 @@
             <div class="footer_row_one_block">
                 <a class="footer_row_one_block_tel" href="">8(846) 250-05-65</a>
                 <div><a class="footer_row_one_block_form" href="">Позвоните мне</a></div>
-                <div><a class="header_link_form footer_header_link_form" href="">Записаться на прием</a></div>
+                <div><a class="header_link_form" href="">Записаться на прием</a></div>
             </div>
 
 
@@ -486,7 +520,7 @@
 
         <div class="footer_row_three">
             
-    Информация, размещенная на данном сайте, не является публичной офертой в смысле статьи 435 Гражданского Кодекса Российской Федерации, носит исключительно информационно-вспомогательный характер и не предполагается для использования в коммерческих целях. Использование, информации, размещенной на данном сайте, в том числе с указанием данного сайта в качестве информационного источника без письменного согласия ГБУЗ СО СГП No6 Промышленного района запрещено. Любые риски, связанные с использованием информации, размещенной на данном сайте, несут исключительно посетители сайта.
+Информация, размещенная на данном сайте, не является публичной офертой в смысле статьи 435 Гражданского Кодекса Российской Федерации, носит исключительно информационно-вспомогательный характер и не предполагается для использования в коммерческих целях. Использование, информации, размещенной на данном сайте, в том числе с указанием данного сайта в качестве информационного источника без письменного согласия ГБУЗ СО СГП No6 Промышленного района запрещено. Любые риски, связанные с использованием информации, размещенной на данном сайте, несут исключительно посетители сайта.
 <div class="footer_conf">
     <a class="conf_polit2" href="">Политика конфидециальности</a>
 
@@ -507,6 +541,22 @@
 
     <script>
 
+
+var swiper1 = new Swiper('.header_services_mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+
+
+
         // slider 1 
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
@@ -517,36 +567,6 @@
                 clickable: true,
             },
             initialSlide: 1, // начинаем со второго слайда (индексация с 0)
-
-
-
-
-
-
-
-
-    //             breakpoints: {
-    //     // Когда ширина экрана будет меньше или равна 1140px
-    //     1083: {
-    //         slidesPerView: 3, // Устанавливаем 2 слайда
-    //         spaceBetween: 30, // Измените расстояние, если необходимо
-    //     },
-    //     // Вы можете добавить другие breakpoint'ы для разных размеров экрана
-    //     768: {
-    //         slidesPerView: 1, // Устанавливаем 2 слайда
-    //         slidesPerView: 1, // Устанавливаем 1 слайд для меньших экранов
-    //     },
-    // },
-
-
-
-
-
-
-
-
-
-
         });
 
         // Обработчики событий для кнопок
@@ -570,7 +590,17 @@ document.querySelector('.next').addEventListener('click', function() {
       },
       initialSlide: 1, 
 
-   
+    //    breakpoints: {
+    //     // Когда ширина экрана будет меньше или равна 1140px
+    //     1140: {
+    //         slidesPerView: 2, // Устанавливаем 2 слайда
+    //         spaceBetween: 20, // Измените расстояние, если необходимо
+    //     },
+    //     // Вы можете добавить другие breakpoint'ы для разных размеров экрана
+    //     768: {
+    //         slidesPerView: 1, // Устанавливаем 1 слайд для меньших экранов
+    //     },
+    // },
 
     });
 

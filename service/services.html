@@ -6,14 +6,15 @@
     <title>Услуга</title>
 
     
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/service.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/service.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
@@ -31,10 +32,10 @@
                 <div class="header_icons_block">
                     <a href="/">
                         <div>
-                            <img src="/assets/img/sert1.png" alt="">
-                            <img src="/assets/img/sert2.png" alt="">
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
                         </div>
-                        <img src="/assets/img/logo.png" alt="">
+                        <img src="../assets/img/logo.png" alt="">
                     </a>
                 </div>
 
@@ -42,6 +43,11 @@
                 <div class="header_icons_block">
                     <p>Самарская городская поликлиника <br> N6 Промышленного района</p>
                     <p>Государственное бюджетное учреждение <br> здравоохранения Самарской области</p>
+                </div>
+
+                <div class="header_icons_block_mobile">
+                    <img src="../assets/img/Снимок экрана 2024-10-14 165701.png">
+                    <img src="../assets/img/Снимок экрана 2024-10-14 165706.png">
                 </div>
 
             </div>
@@ -113,46 +119,74 @@
                 <div><a class="header_link_form" href="">Записаться на прием</a></div>
             </div>
         </nav>
-
-
-        <div class="header_services">
-            <a href="/services/services.html" class="header_services_block">
-                <div><img src="/assets/img/ic1.png" alt=""></div>
-                <p>Платные услуги</p>
-            </a>
-
-            <a href="/vrachi/vrachi.html" class="header_services_block">
-                <div><img src="/assets/img/ic2.png" alt=""></div>
-                <p>Врачи</p>
-            </a>
-
-            <a href="/price/price.html" class="header_services_block">
-                <div><img src="/assets/img/ic3.png" alt=""></div>
-                <p>Цены</p>
-            </a>
-
-            <a href="/akcii/akcii.html" class="header_services_block">
-                <div><img src="/assets/img/ic4.png" alt=""></div>
-                <p>Акции</p>
-            </a>
-
-            <a href="" class="header_services_block">
-                <div><img src="/assets/img/ic5.png" alt=""></div>
-                <p>ОМС</p>
-            </a>
-        </div>
-
-        <div class="header_bottom_menu">
-
-            <div class="header_search">
-                <input placeholder="Поиск по сайту" type="text">
-                
+        <div class="header-services-and-poisk-group">
+            <div class="swiper-container header_services_mobile">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic1.png" alt=""></div>
+                        <p>Платные услуги</p>
+                    </a>
+                    <a href="/vrachi/vrachi.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic2.png" alt=""></div>
+                        <p>Врачи</p>
+                    </a>
+        
+                    <a href="/price/price.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic3.png" alt=""></div>
+                        <p>Цены</p>
+                    </a>
+        
+                    <a href="/akcii/akcii.html" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic4.png" alt=""></div>
+                        <p>Акции</p>
+                    </a>
+        
+                    <a href="" class="swiper-slide header_services_block">
+                        <div><img src="../assets/img/ic5.png" alt=""></div>
+                        <p>ОМС</p>
+                    </a>
+                </div>
             </div>
 
-            <!-- <div class="header_bad_vision">
-                <a href="">Версия для слабовидящих</a>
-            </div> -->
+            <div class="header_services">
+                <a href="/services/services.html" class="header_services_block">
+                    <div><img src="../assets/img/ic1.png" alt=""></div>
+                    <p>Платные услуги</p>
+                </a>
 
+                <a href="/vrachi/vrachi.html" class="header_services_block">
+                    <div><img src="../assets/img/ic2.png" alt=""></div>
+                    <p>Врачи</p>
+                </a>
+
+                <a href="/price/price.html" class="header_services_block">
+                    <div><img src="../assets/img/ic3.png" alt=""></div>
+                    <p>Цены</p>
+                </a>
+
+                <a href="/akcii/akcii.html" class="header_services_block">
+                    <div><img src="../assets/img/ic4.png" alt=""></div>
+                    <p>Акции</p>
+                </a>
+
+                <a href="" class="header_services_block">
+                    <div><img src="../assets/img/ic5.png" alt=""></div>
+                    <p>ОМС</p>
+                </a>
+            </div>
+
+            <div class="header_bottom_menu">
+
+                <div class="header_search">
+                    <input placeholder="Поиск по сайту" type="text">
+                    
+                </div>
+
+                <!-- <div class="header_bad_vision">
+                    <a href="">Версия для слабовидящих</a>
+                </div> -->
+
+            </div>
         </div>
 
 
@@ -228,7 +262,7 @@
     
                         <div class="swiper-slide">
                             <div class="swiper-slide_block">
-                                <img src="/assets/img/doctor.png" alt="">
+                                <img src="../assets/img/doctor.png" alt="">
                                 <h4>Людмила Германовна Ткачук</h4>
                                 <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
                                 <a href="">Записаться на прием</a>
@@ -237,7 +271,7 @@
     
                         <div class="swiper-slide">
                             <div class="swiper-slide_block">
-                                <img src="/assets/img/doctor.png" alt="">
+                                <img src="../assets/img/doctor.png" alt="">
                                 <h4>Людмила Германовна Ткачук</h4>
                                 <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
                                 <a href="">Записаться на прием</a>
@@ -246,7 +280,7 @@
     
                         <div class="swiper-slide">
                             <div class="swiper-slide_block">
-                                <img src="/assets/img/doctor.png" alt="">
+                                <img src="../assets/img/doctor.png" alt="">
                                 <h4>Людмила Германовна Ткачук</h4>
                                 <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
                                 <a href="">Записаться на прием</a>
@@ -255,7 +289,7 @@
     
                         <div class="swiper-slide">
                             <div class="swiper-slide_block">
-                                <img src="/assets/img/doctor.png" alt="">
+                                <img src="../assets/img/doctor.png" alt="">
                                 <h4>Людмила Германовна Ткачук</h4>
                                 <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
                                 <a href="">Записаться на прием</a>
@@ -264,7 +298,7 @@
     
                         <div class="swiper-slide">
                             <div class="swiper-slide_block">
-                                <img src="/assets/img/doctor.png" alt="">
+                                <img src="../assets/img/doctor.png" alt="">
                                 <h4>Людмила Германовна Ткачук</h4>
                                 <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
                                 <a href="">Записаться на прием</a>
@@ -273,7 +307,7 @@
     
                         <div class="swiper-slide">
                             <div class="swiper-slide_block">
-                                <img src="/assets/img/doctor.png" alt="">
+                                <img src="../assets/img/doctor.png" alt="">
                                 <h4>Людмила Германовна Ткачук</h4>
                                 <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
                                 <a href="">Записаться на прием</a>
@@ -303,10 +337,10 @@
                 <div class="header_icons_block">
                     <a href="/">
                         <div>
-                            <img src="/assets/img/sert1.png" alt="">
-                            <img src="/assets/img/sert2.png" alt="">
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
                         </div>
-                        <img src="/assets/img/logo.png" alt="">
+                        <img src="../assets/img/logo.png" alt="">
                     </a>
                 </div>
 
@@ -350,9 +384,9 @@
 
             <div class="footer_row_two_social">
                 <div>
-                    <a href=""><img src="/assets/img/wsapp.png" alt=""></a>
-                    <a href=""><img src="/assets/img/tg.png" alt=""></a>
-                    <a href=""><img src="/assets/img/vk.png" alt=""></a>
+                    <a href=""><img src="../assets/img/wsapp.png" alt=""></a>
+                    <a href=""><img src="../assets/img/tg.png" alt=""></a>
+                    <a href=""><img src="../assets/img/vk.png" alt=""></a>
                 </div>
 
                 <a class="conf_polit" href="">Политика конфидециальности</a>
@@ -371,6 +405,22 @@
 
 
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+
+var swiper1 = new Swiper('.header_services_mobile', {
+    slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    spaceBetween: 20, // отступ
+    speed: 800, // Плавная прокрутка
+    freeMode: true, // написал выше
+    effect: 'slide', // Эффект плавного перехода
+    touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    // grabCursor: true, // Указатель мыши меняется на "руку"
+    loop: false, // Отключаем бесконечную прокрутку
+});
+
+</script>
 
 
     
