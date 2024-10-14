@@ -1,0 +1,26 @@
+.container {
+    max-width: 1370px !important;
+}
+
+.docs_container {
+    max-width: 1370px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+
+}
+
+.docs_container_block {
+    width: 325px;
+    height: 479px;
+
+    box-shadow: -3px -3px 10px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+
+}
+
+.docs_container h4 {
+    margin-left: 15px;
+}

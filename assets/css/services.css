@@ -1,0 +1,124 @@
+
+
+h2 {
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 40px;
+}
+.list_find_block {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+.list_find_block_list {
+    max-width: 300px;
+    width: 100%;
+}
+.list_find_block_list select {
+    max-width: 300px;
+    width: 100%;
+    height: 44px;
+    border-radius: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #BFC8D2;
+    
+    cursor: pointer;
+    color: #AEAEAE;
+    appearance: none;
+    font-size: 14px;
+}
+
+.list_find_block_search {
+    max-width: 280px;
+    width: 100%;
+}
+.list_find_block_search input{
+    max-width: 280px;
+    width: 100%;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px #BFC8D2;
+    
+    cursor: pointer;
+    color: #AEAEAE;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.list_find_block_search input::placeholder {
+    color: #AEAEAE;
+}
+
+/**/
+.services_container {
+    margin-top: 40px;
+}
+
+.services_block {
+    box-shadow: -1px -1px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.services_block h3 {
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.service_row_container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.services_row {
+    box-sizing: border-box;
+    max-width: 1320px;
+    width: 100%;
+    height: 72px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: solid 1px #BFC8D299;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(51, 51, 51, 0.6);
+    transition: 0.15s;
+    
+
+
+}
+
+.services_row:hover {
+    color: black;
+    background-color: rgba(237, 243, 248, 1);
+    transition: 0.15s;
+
+}
+
+.services_row:hover p:last-child {
+    color: rgba(92, 186, 234, 1);
+    transition: 0.15s;
+}
+
+.show_more {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(174, 174, 174, 1);
+}
+

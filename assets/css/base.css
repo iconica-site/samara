@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Geologica", sans-serif;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.breadcrumb {
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+}
+
+.breadcrumb div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    background-color: rgba(237, 243, 248, 1);
+    border-radius: 50px;
+
+}
+.breadcrumb div:nth-child(1)  {
+    color: #AEAEAE;
+}
+
+.breadcrumb div:nth-child(2)  {
+    color: #BFC8D2;
+}
+
+.pagination {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.pagination_circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: solid 1px rgba(191, 200, 210, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pagination_circle:nth-child(1) {
+
+}
+
+
+/**/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 479px;
+
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.08);
+
+    box-shadow: -3px -3px 10px 0px rgba(0, 0, 0, 0.08);
+
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-slide_block {}
+
+
+
+.swiper-slide_block img {
+    width: 295px;
+    height: 274px;
+    border-radius: 10px;
+
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.swiper-slide_block h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    width: 295px;
+    font-weight: 500;
+}
+
+.swiper-slide_block p {
+    width: 295px;
+    font-weight: 300;
+    color: rgba(174, 174, 174, 1);
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.swiper-slide_block a {
+    width: 295px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 73.86px;
+    color: rgba(92, 186, 234, 1);
+    margin: 0 auto;
+    margin-top: 15px;
+    border: solid 1px rgba(92, 186, 234, 1);
+    transition: 0.15s;
+}
+
+.swiper-slide_block a:hover {
+    color: white;
+    background-color: rgba(92, 186, 234, 1);
+    transition: 0.15s;
+}
