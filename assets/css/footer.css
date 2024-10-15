@@ -105,6 +105,33 @@ footer {
     display: none;
 }
 
+.footer_link1 {
+    width: 197px;
+    height: 52px;
+    border: solid 1px rgba(92, 186, 234, 1);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer_link2 {
+    width: 246px;
+    height: 52px;
+    border: solid 1px rgba(92, 186, 234, 1);
+    background-color: rgba(92, 186, 234, 1);
+    border-radius: 100px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
 /*adaptive*/
 
 @media (max-width:1365px) {
@@ -142,7 +169,7 @@ footer {
     }
     .footer_row_one_block {
         flex-direction: column-reverse;
-        margin-top: 20px;
+        margin-top: 10px;
         gap: 10px;
         height: auto;
     }
@@ -150,10 +177,8 @@ footer {
         justify-content: center;
     }
 
-    .footer_row_one_block_form_footer, .header_link_form_footer {
-        width: 335px;
-        height: 45px;
-    }
+   
+
 
 
     .footer_row_two {
@@ -195,6 +220,43 @@ footer {
     }
     .conf_polit_p {
         color: rgba(92, 186, 234, 1);
+    }
+
+
+    .header_icons_footer {
+        padding: 0 !important;
+        justify-content: center !important;
+        gap: 10px;
+    }
+    .header_icons_block_link_div {
+        display: block !important; 
+    }
+    .footer_logo-foot {
+        width: 45px !important;
+    }
+    .header_icons_block_link_foot {
+        gap: 10px !important;
+    }
+    .footer_link1 {
+        width: 335px;
+        height: 45px;
+    }
+
+    .footer_link2 {
+        width: 335px;
+        height: 45px;
+    }
+    .header_icons_block {
+        gap: 15px;
+    }
+    .header_icons_block p {
+        font-size: 14px;
+    }
+    .footer_row_two_link {
+        gap: 80px;
+    }
+    .footer_row_two_block a {
+        font-size: 16px;
     }
     
 }
