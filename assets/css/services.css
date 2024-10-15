@@ -47,6 +47,7 @@ h2 {
     align-items: center;
     padding-left: 20px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .list_find_block_search input::placeholder {
@@ -77,6 +78,7 @@ h2 {
     flex-direction: column;
     gap: 10px;
     padding-left: 20px;
+    padding-right: 20px;
     margin-top: 30px;
 }
 
@@ -122,3 +124,35 @@ h2 {
     color: rgba(174, 174, 174, 1);
 }
 
+@media (max-width:670px) {
+    h2 {
+        font-size: 34px;
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+    .list_find_block {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .list_find_block_list, .list_find_block_list select {
+        max-width: 480px;
+    }
+    .list_find_block_search, .list_find_block_search input {
+        max-width: 480px;
+    }
+    .services_block h3 {
+        font-size: 22px;
+        padding-top: 20px;
+        padding-left: 20px;
+
+    }
+    .services_row p:nth-child(2) {
+        display: none;
+    }
+    
+    
+}

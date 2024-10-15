@@ -17,7 +17,8 @@
                 burger_stick1.style.transform = '';
                 burger_stick1.style.top = '';
 
-                burger_click.style.top = ''
+                burger_click.style.top = '';
+                body.style.overflow = '';
                 
             } else {
                 nav_burger_block.style.display = 'block';
@@ -27,9 +28,10 @@
 
 
                 burger_stick2.style.transform = 'rotate3d(0, -1, -5, 45deg)';
-                burger_stick2.style.top = '-10px'
+                burger_stick2.style.top = '-10px';
 
-                burger_click.style.top = '3px'
+                burger_click.style.top = '3px';
+                body.style.overflow = 'hidden';
                 
             }
         });

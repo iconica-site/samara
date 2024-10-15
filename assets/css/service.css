@@ -74,3 +74,64 @@
 .slider_service {
     margin-top: 100px;
 }
+
+
+@media (max-width:670px) {
+    .service_block h3 {
+        font-size: 28px;
+        padding-left: 15px;
+    }
+    .service_price {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .left_menu h4 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .left_menu p {
+        font-size: 14px;
+        
+    }
+    .left_menu {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .left_menu_btns_row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5px;
+    }
+    .left_menu_btns_row button {
+        width: 100%;
+    }
+    .tittle_row_btns_href_service {
+        display: none !important;
+    }
+    .tittle_row h3 {
+        margin-top: 40px;
+        font-size: 28px;
+        padding-left: 15px;
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width:950px) {
+    .right_menu {
+        display: none;
+    }
+    .left_menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .service_block h3 {
+        padding-left: 15px;
+    }
+}
