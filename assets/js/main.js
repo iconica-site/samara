@@ -79,7 +79,7 @@
         el: ".swiper-pagination",
         clickable: true,
       },
-      initialSlide: 2, 
+      initialSlide: 0, 
 
     
 
