@@ -368,7 +368,7 @@ nav {
     display: none;
     position: fixed;
     z-index: 99;
-    top: 77px;
+    /* top: 77px; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -401,7 +401,7 @@ nav {
 
 .burgerlogo {
     display: flex;
-    margin-top: 40px;
+    margin-top: 85px;
     padding-left: 15px;
     padding-right: 15px;
     gap: 15px;
@@ -409,7 +409,7 @@ nav {
 .burger_logo_block1 {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 10px;
 }
 .burger_logo_block2 {
     display: flex;
@@ -422,6 +422,7 @@ nav {
     color: rgba(92, 186, 234, 1);
     font-size: 14px;
     font-weight: 500;
+    line-height: 14px;
 }
 .burger_logo_block p:nth-child(2) {
     color: rgba(174, 174, 174, 1);
@@ -463,7 +464,6 @@ nav {
     padding-right: 20px;
     box-sizing: border-box;
 
-    border-bottom: 1px solid rgba(237, 243, 248, 1);
 }
 
 .burger_navbar_block p {
@@ -507,6 +507,18 @@ nav {
     
 }
 
+.burger_input {
+    height: 44px !important;
+}
+
+.header_search_burger {
+    margin-left: 20px;
+}
+.brgr_btn_srch {
+    top: 5px !important;
+    left: -44px !important;
+}
+
 
 
 @media screen and (max-width: 950px) {
@@ -515,6 +527,11 @@ nav {
     }
     nav {
         height: 70px;
+
+        position: absolute;
+        background-color: white;
+        z-index: 99999;
+        top: 0;
     }
     .header_icons {
         padding: 20px;
@@ -577,13 +594,12 @@ nav {
         
     }
     .header_search {
-        /* width: 88%; */
-        padding-left: 25px;
+        /* padding-left: 25px; */
+        position: relative;
     }
     .header_bottom_menu {
         width: auto;
         margin: 0px;
-        /* justify-content: center; */
     }
     .header_services {
         display: none;
@@ -594,18 +610,18 @@ nav {
     .header-services-and-poisk-group {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 30px;
+        margin-top: 86px;
     }
     .header_icons_block_mobile {
-        gap: 20px;
+        gap: 10px;
     }
     .header_icons_block_mobile a {
         width: 38px;
         height: 35px;
     }
     .header_icons_block_mobile a img {
-        width: 38px;
-        height: 35px;
+        width: 34px;
+        height: 31px;
     }
     .header_search input {
         background-size: 50px;
@@ -618,8 +634,8 @@ nav {
         height: 40px;
     }
     .header_search button img {
-        width: 45px;
-        height: 40px;
+        width: 37px;
+        height: 30px;
     }
     .header_services_block p {
         font-size: 16px;

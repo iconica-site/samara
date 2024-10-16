@@ -6,6 +6,7 @@
         let body = document.querySelector('body');
         let burger_stick1 = document.querySelector('.burger_stick1');
         let burger_stick2 = document.querySelector('.burger_stick2');
+        let headerTop = document.querySelector('.header-services-and-poisk-group');
 
         burger_click.addEventListener('click', function() {
             if (nav_burger_block.style.display === 'block') {
@@ -19,6 +20,10 @@
 
                 burger_click.style.top = '';
                 body.style.overflow = '';
+
+                headerTop.style.marginTop = ''
+
+
                 
             } else {
                 nav_burger_block.style.display = 'block';
@@ -32,6 +37,8 @@
 
                 burger_click.style.top = '3px';
                 body.style.overflow = 'hidden';
+
+                headerTop.style.marginTop = '0'
                 
             }
         });
