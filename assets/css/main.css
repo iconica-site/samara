@@ -327,17 +327,39 @@
 }
 
 .section5_slider {
+    height: 70px;
     overflow: hidden;
+    margin-top: 40px;
+}
+.section5_slider .swiper {
+    margin-top: 0 !important;
 }
 
 .section5_slider .swiper-wrapper {
-    height: 70px !important;
-    width: 190px !important;
+    /* height: 70px !important;
+    width: 190px !important; */
 }
+.section5_slider .swiper-slide {
+    max-width: 200px;
+    width: 100%;
+}
+
+.section5_slider img {
+    
+    object-fit: contain !important;
+    max-width: 200px;
+    width: 100%;
+
+}
+
+
+
+
+
+
 .section5_slider .swiper-slide {
 
     box-shadow: none;
-    border: solid;
 }
 
 .doctorSlider .swiper-wrapper {

@@ -50,6 +50,47 @@
             loop: false, // Отключаем бесконечную прокрутку
         });
         
+
+
+
+
+         // slider 2
+
+    // var swiper2 = new Swiper(".mySwiper2", {
+    //     slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
+    //     spaceBetween: 20, // отступ
+    //     speed: 800, // Плавная прокрутка
+    //     freeMode: true, // написал выше
+    //     effect: 'slide', // Эффект плавного перехода
+    //     touchRatio: 1.5, // Увеличение чувствительности при свайпе
+    //     resistanceRatio: 0.8, // Плавное сопротивление при достижении конца слайдера
+    //     // grabCursor: true, // Указатель мыши меняется на "руку"
+    //     loop: false, // Отключаем бесконечную прокрутку
+    // });
+
+
+
+
+    var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      initialSlide: 2, 
+
+    
+
+    });
+
+
+
+
+
+
+
         //навбар
 
         let burger_navbar_block = document.querySelector('.burger_navbar_block');
