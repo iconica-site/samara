@@ -207,6 +207,10 @@
 .section3_block_map {
     border-radius: 15px;
     overflow: hidden;
+
+    /* padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box; */
 }
 
 .section4 {
@@ -373,6 +377,12 @@
     height: auto !important;
 }
 
+
+.main_block_wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
 
 
 /**/

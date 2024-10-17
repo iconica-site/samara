@@ -47,7 +47,7 @@
 
         var swiper1 = new Swiper('.header_services_mobile', {
             slidesPerView: 'auto', // чтобы не листалось по одному слайду надо здесь поставить авто и добавить freeMode true
-            spaceBetween: 20, // отступ
+            spaceBetween: 10, // отступ
             speed: 800, // Плавная прокрутка
             freeMode: true, // написал выше
             effect: 'slide', // Эффект плавного перехода
@@ -109,6 +109,12 @@
         let burger_navbar_block3 = document.querySelector('.burger_navbar_block3');
         let burger_navbar_block_open3 = document.querySelector('.burger_navbar_block_open3');
 
+        let burgerIcon = document.querySelector('.icon1');
+        let burgerIcon2 = document.querySelector('.icon2');
+        let burgerIcon3 = document.querySelector('.icon3');
+
+
+
         
 
 
@@ -118,8 +124,14 @@
         burger_navbar_block.addEventListener('click', function() {
             if (burger_navbar_block_open.style.display === 'block') {
                 burger_navbar_block_open.style.display = 'none';
+
+                burgerIcon.style.transform = ''
+                burgerIcon.style.top = ''
             } else {
                 burger_navbar_block_open.style.display = 'block';
+
+                burgerIcon.style.transform = 'rotate(180deg)'
+                burgerIcon.style.top = '-4px'
             }
         });
 
@@ -127,8 +139,15 @@
         burger_navbar_block2.addEventListener('click', function() {
             if (burger_navbar_block_open2.style.display === 'block') {
                 burger_navbar_block_open2.style.display = 'none';
+
+                burgerIcon2.style.transform = ''
+                burgerIcon2.style.top = ''
             } else {
                 burger_navbar_block_open2.style.display = 'block';
+
+                burgerIcon2.style.transform = 'rotate(180deg)'
+                burgerIcon2.style.top = '-4px'
+                
             }
         });
 
@@ -136,8 +155,14 @@
         burger_navbar_block3.addEventListener('click', function() {
             if (burger_navbar_block_open3.style.display === 'block') {
                 burger_navbar_block_open3.style.display = 'none';
+
+                burgerIcon3.style.transform = ''
+                burgerIcon3.style.top = ''
             } else {
                 burger_navbar_block_open3.style.display = 'block';
+
+                burgerIcon3.style.transform = 'rotate(180deg)'
+                burgerIcon3.style.top = '-4px'
             }
         });
         

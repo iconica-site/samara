@@ -32,16 +32,16 @@
                 <div class="header_icons_block">
                     <a href="/">
                         <div>
-                            <img src="/assets/img/sert1.png" alt="">
-                            <img src="/assets/img/sert2.png" alt="">
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
                         </div>
-                        <img src="/assets/img/logo.png" alt="">
+                        <img src="../assets/img/logo.png" alt="">
                     </a>
                 </div>
 
 
                 <div class="header_icons_block">
-                    <p>Самарская городская поликлиника <br> N6 Промышленного района</p>
+                    <p>Самарская городская поликлиника  <br> №6 Промышленного района</p>
                     <p>Государственное бюджетное учреждение <br> здравоохранения Самарской области</p>
                 </div>
 
@@ -51,7 +51,7 @@
                         <div class="burger_stick2"></div>
                     </a>
 
-                    <a href=""><img src="/assets/img/Снимок экрана 2024-10-14 165706.png"></a>
+                    <a href=""><img src="../assets/img/Снимок экрана 2024-10-14 165706.png"></a>
                 </div>
 
             </div>
@@ -127,28 +127,30 @@
             <div class="burgerlogo">
 
                 <div class="burger_logo_block ">
-                    <img class="brg_logo1" src="/assets/img/logo.png" alt="">
+                    <img class="brg_logo1" src="./assets/img/logo.png" alt="">
                     <div class="burger_logo_block2">
-                        <img class="brg_logo2" src="/assets/img/sert1.png" alt="">
-                        <img class="brg_logo2" src="/assets/img/sert2.png" alt="">
+                        <img class="brg_logo2" src="./assets/img/sert1.png" alt="">
+                        <img class="brg_logo2" src="./assets/img/sert2.png" alt="">
                     </div>
                 </div>
 
                 <div class="burger_logo_block burger_logo_block1">
-                    <p>Самараская городская поликлиника №6 Промышленного района</p>
+                    <p>Самарская городская поликлиника №6 Промышленного района</p>
                     <p>Государственное бюджетное учреждение здравоохранения Самарской области</p>
                 </div>
 
             </div>
 
             <div class="burger_content">
-                <div class="header_search">
-                    <input placeholder="" type="text">
-                    <button>
+                <div class="header_search header_search_burger">
+                    <input class="burger_input" placeholder="" type="text">
+                    <button class="brgr_btn_srch">
                         <img src="/assets/img/input_search.png" alt="">
                     </button>
                     
                 </div>
+
+                
 
 
                 <div class="burger_navbar">
@@ -158,7 +160,7 @@
 
                         <div class="burger_navbar_block">
                             <p>Телефоны</p>
-                            <i class="fi fi-rs-angle-small-down"></i>
+                            <i class="fi fi-rs-angle-small-down     icon1"></i>
                         </div>
                         <div class="burger_navbar_block_open">
 
@@ -176,7 +178,10 @@
                             <a href="">8(846) 250-05-65</a>
                             </div>
 
+                            
+
                         </div>
+                        <div style="display: block !important; height: 1px; width: 80%; background-color: rgba(237, 243, 248, 1); position: relative; z-index: 999; margin-left: 15px ;" class="burger_navbar_block_open_border_bottom"></div>
                     
                     </div>
 
@@ -185,7 +190,7 @@
 
                         <div class="burger_navbar_block burger_navbar_block2">
                             <p>О нас</p>
-                            <i class="fi fi-rs-angle-small-down"></i>
+                            <i class="fi fi-rs-angle-small-down  icon2"></i>
                         </div>
                         <div class="burger_navbar_block_open burger_navbar_block_open2">
 
@@ -204,14 +209,14 @@
                             </div>
 
                         </div>
-                    
+                        <div style="display: block !important; height: 1px; width: 80%; background-color: rgba(237, 243, 248, 1); position: relative; z-index: 999; margin-left: 15px ;" class="burger_navbar_block_open_border_bottom"></div>
                     </div>
 
                     <div class="burger_nav_content">
 
                         <div class="burger_navbar_block burger_navbar_block3">
                             <p>Пациентам</p>
-                            <i class="fi fi-rs-angle-small-down"></i>
+                            <i class="fi fi-rs-angle-small-down  icon3"></i>
                         </div>
                         <div class="burger_navbar_block_open burger_navbar_block_open3">
 
@@ -230,11 +235,12 @@
                             </div>
 
                         </div>
-                    
+                        <div style="display: block !important; height: 1px; width: 80%; background-color: rgba(237, 243, 248, 1); position: relative; z-index: 999; margin-left: 15px ;" class="burger_navbar_block_open_border_bottom"></div>
                     </div>
 
 
-                
+                    <a class="burger_form" href="">Записаться на прием online</a>
+
                 </div>
             </div>
         </div>
@@ -245,7 +251,7 @@
                 <div class="swiper-wrapper">
                     <a href="/services/services.html" class="swiper-slide header_services_block">
                         <div><img src="../assets/img/ic1.png" alt=""></div>
-                        <p>Платные услуги</p>
+                        <p class="pslider">Платные услуги</p>
                     </a>
                     <a href="/vrachi/vrachi.html" class="swiper-slide header_services_block">
                         <div><img src="../assets/img/ic2.png" alt=""></div>
@@ -297,18 +303,33 @@
             </div>
 
             <div class="header_bottom_menu">
+                <!-- test  -->
 
-                <div class="header_search">
+
+                <!-- <div class="header_search header_searchNoNBrgr">
                     <input placeholder="Поиск по сайту" type="text">
                     <button>
                         <img src="/assets/img/input_search.png" alt="">
                     </button>
                     
+                </div> -->
+
+
+                <div class="header_search header_search_burger">
+                    <input class="burger_input" placeholder="Поиск по сайту" type="text">
+                    <button class="brgr_btn_srch">
+                        <img src="/assets/img/input_search.png" alt="">
+                    </button>
+                    
                 </div>
 
-                <!-- <div class="header_bad_vision">
-                    <a href="">Версия для слабовидящих</a>
-                </div> -->
+
+
+
+
+                <div style="" class="header_bad_vision">
+                    <a style="height: 100%; display: flex; align-items: center;" href=""><img style="width: 60px;" src="../assets/img/Снимок экрана 2024-10-14 165706.png"></a>
+                </div>
 
             </div>
         </div>

@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,8 @@ a {
     margin-top: 40px;
     display: flex;
     gap: 8px;
+
+    margin-left: 15px;
 }
 
 .breadcrumb div {
@@ -74,7 +78,7 @@ a {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,10 +93,10 @@ a {
 }
 
 .swiper-slide img {
-    display: block;
+    /* display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .swiper-pagination {
@@ -149,6 +153,12 @@ a {
     background-color: rgba(92, 186, 234, 1);
     transition: 0.15s;
 }
-.swiper-slide {
+/* .swiper-slide {
     height: auto !important;
+} */
+
+
+.header-services-and-poisk-group .swiper-slide {
+    box-shadow: none !important;
 }
+
