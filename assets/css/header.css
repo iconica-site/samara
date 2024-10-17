@@ -719,6 +719,9 @@ nav {
     .pslider {
         margin-top: 20px !important;
     }
+    .header_icons_block p:nth-child(2) {
+        font-size: 12px;
+    }
 }
 
 
