@@ -132,6 +132,10 @@ footer {
     font-size: 18px;
     font-weight: 500;
 }
+
+.footer_adapt_block {
+    display: none;
+}
 /*adaptive*/
 
 @media (max-width:1365px) {
@@ -156,7 +160,7 @@ footer {
     }
     .footer_row_one {
         padding-top: 30px;
-        padding-bottom: 90px;
+        padding-bottom: 20px;
     }
     .footer_logos {
         width: 20px !important;
@@ -253,10 +257,83 @@ footer {
         font-size: 14px;
     }
     .footer_row_two_link {
-        gap: 80px;
+        gap: 90px;
     }
     .footer_row_two_block a {
         font-size: 16px;
+    }
+
+    .header_icons_blockFooter p:first-child{
+        line-height: 14px;
+        padding-bottom: 5px;
+    }
+    
+    .footer_row_one_block {
+        display: none;
+    }
+    .footer_row_two_social div {
+        display: none;
+    }
+    .footer_adapt_block {
+        display: block;
+    }
+    .footer_adapt_block_tel_soc {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin-top: 20px;
+    }
+    .socialF {
+        display: flex;
+    }
+    .socialF img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 20px;
+    }
+    .footerLinks a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 73px;
+        width: 335px;
+        height: 45px;
+        border: 1px solid rgba(92, 186, 234, 1);
+    }
+    .footerLinks a:last-child {
+        color: white;
+        background-color: rgba(92, 186, 234, 1);
+    }
+
+    .footer_row_two_block {
+        gap: 15px;
+    }
+    .footer_row_two {
+        padding-top: 30px;
+    }
+    .footer_row_three {
+        margin-top: 30px;
+    }
+    .footer_row_three {
+        line-height: 12px;
+        font-size: 10px;
+    }
+    .footer_conf {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .conf_polit2 {
+        width: 157px;
+    }
+    .footer_row_three {
+        padding-bottom: 100px;
     }
     
 }

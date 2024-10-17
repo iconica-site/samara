@@ -271,6 +271,11 @@ body {
 .akcii-content {
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: center;
+}
+.main-content h1 {
+    margin-left: 15px;
 }
 .akcii-pagination {
     justify-content: center;

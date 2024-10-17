@@ -33,6 +33,33 @@
     align-items: center;
 }
 
+h2 {
+    margin-left: 15px;
+}
+.list_find_block {
+    margin-left: 15px;
+}
+.list_find_block_list {
+    display: flex;
+}
+.list_find_block_list i {
+    position: relative;
+    left: -45px;
+    top: 10px;
+    font-size: 24px;
+}
+
+.list_find_block_search {
+    display: flex;
+    width: 100% !important;
+}
+.iconFind {
+    display: block;
+    position: relative;
+    left: -45px;
+    top: 14px;
+}
+
 @media screen and (max-width: 850px) {
     .docs_container {
         justify-content: center;
@@ -67,6 +94,12 @@
         flex-direction: column;
         height: auto;
     }
+    .list_find_block {
+        margin-top: 20px;
+    }
+    .docs_container {
+        margin-top: 20px;
+    }
     
 }
 
@@ -82,3 +115,4 @@
         margin-top: 50px;
     }
 }
+
