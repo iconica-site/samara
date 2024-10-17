@@ -47,7 +47,12 @@ h2 {
     left: -45px;
     top: 10px;
     font-size: 24px;
+
+    width: 0;
+    height: 0;
 }
+
+
 
 .list_find_block_search {
     display: flex;
@@ -58,7 +63,11 @@ h2 {
     position: relative;
     left: -40px;
     top: 14px;
-    width: 24px;
+    width: 0;
+}
+
+#dropdown-icon {
+    pointer-events: none;
 }
 
 @media screen and (max-width: 850px) {
