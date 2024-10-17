@@ -56,8 +56,9 @@ h2 {
 .iconFind {
     display: block;
     position: relative;
-    left: -45px;
+    left: -40px;
     top: 14px;
+    width: 24px;
 }
 
 @media screen and (max-width: 850px) {
@@ -113,6 +114,12 @@ h2 {
 
     .swiper-slide_block img {
         margin-top: 50px;
+    }
+    h2 {
+        margin-left: 0;
+    }
+    .list_find_block {
+        margin-left: 0;
     }
 }
 
