@@ -162,3 +162,8 @@ a {
     box-shadow: none !important;
 }
 
+@media (max-width:850px) {
+    .breadcrumb div {
+        font-size: 14px;
+    }
+}

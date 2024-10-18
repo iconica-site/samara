@@ -1,4 +1,10 @@
 @media screen and (max-width: 850px) {
+    .bread-crumbs-content {
+        padding: 0;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: 40px;
+    }
     .price-input-select select {
         max-width: none;
         margin-bottom: 10px;
@@ -46,7 +52,7 @@
         overflow-x: hidden;
     }
     .bread-crumbs-content {
-        margin: 0px;
+        /* margin: 0px; */
     }
     .container {
         margin: 0px;
@@ -89,5 +95,13 @@
     .akcii-block {
         margin-right: 0px;
         flex: 0 0 95%;
+    }
+}
+
+
+@media (max-width:670px) {
+    .main-content h1 {
+        font-size: 34px;
+        margin-left: 15px;
     }
 }

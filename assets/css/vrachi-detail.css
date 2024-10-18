@@ -64,12 +64,57 @@
 .doctor_text ul {
     margin-left: 25px;
 }
+
+
 @media screen and (max-width: 850px) {
+    .doctor_text h4{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .doctor_text ul {
+        font-size: 14px;
+    }
+    .doctor_text_wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .doctor_text {
+        padding-left: 15px;
+        padding-bottom: 20px;
+        padding-right: 15px;
+    }
+    .doctor_card_text_btn {
+        width: 305px;
+    }
+    .doctor_card_text_btn_div {
+        display: flex;
+        justify-content: center;
+        width: 305px;
+
+        margin: 0 auto !important;
+        padding-bottom: 15px;
+    }
+    .doctor_card_text h4 {
+        padding-bottom: 0;
+    }
+    .doctor_card_text div {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 15px;
+    }
     .doctor_card {
         flex-direction: column;
         height: auto;
+
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        padding-bottom: 15px;
     }
     .doctor_card img {
-        width: 90%;
+        /* width: 90%; */
+        width: 345px;
+        margin: 0 auto;
     }
 }

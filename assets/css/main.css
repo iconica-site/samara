@@ -587,7 +587,8 @@
     }
 
     .section4HrefAdapt {
-        width: 345px;
+        max-width: 345px;
+        width: 100%;
         height: 45px;
         border: solid 1px rgba(92, 186, 234, 1);
         border-radius: 100px;
@@ -598,6 +599,10 @@
         justify-content: center;
         align-items: center;
         margin-top: 10px;
+    }
+
+    .section5 h2 {
+        margin-left: 15px;
     }
 }
 

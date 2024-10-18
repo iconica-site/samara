@@ -229,9 +229,15 @@ footer {
 
     .header_icons_footer {
         padding: 0 !important;
-        justify-content: center !important;
-        gap: 10px;
+        justify-content: space-between !important;
+        gap: 15px;
+
+        width: 337px;
+
+        
     }
+
+    
     .header_icons_block_link_div {
         display: block !important; 
     }
@@ -250,11 +256,9 @@ footer {
         width: 335px;
         height: 45px;
     }
-    .header_icons_block {
-        gap: 15px;
-    }
+    
     .header_icons_block p {
-        font-size: 14px;
+        font-size: 15px;
     }
     .footer_row_two_link {
         gap: 90px;
@@ -266,6 +270,7 @@ footer {
     .header_icons_blockFooter p:first-child{
         line-height: 14px;
         padding-bottom: 5px;
+        padding-top: 3px;
     }
     
     .footer_row_one_block {
@@ -341,3 +346,9 @@ footer {
 
 
 
+@media (max-width:430px) {
+    .header_icons_footer {
+        /* gap: 15px !important; */
+    }
+    
+}
