@@ -285,7 +285,7 @@ footer {
     .footer_adapt_block_tel_soc {
         display: flex;
         align-items: center;
-        gap: 80px;
+        gap: 70px;
         margin-top: 20px;
     }
     .socialF {
