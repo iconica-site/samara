@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Врачи</title>
+<link href="../assets/css/base.css" rel="stylesheet"/>
+<link href="../assets/css/header.css" rel="stylesheet"/>
+<link href="../assets/css/footer.css" rel="stylesheet"/>
+<link href="../assets/css/services.css" rel="stylesheet"/>
+<link href="../assets/css/vrachi-detail.css" rel="stylesheet"/>
+<link href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+</link></head>
+<style>
+    @media (max-width: 670px) {
+        h2 {
+            font-size: 34px;
+        }
+    }
+</style>
+<body>
+<header>
+<nav>
+<div class="header_icons">
+<div class="header_icons_block">
+<a href="/">
+<div>
+<img alt="" src="../assets/img/sert1.png"/>
+<img alt="" src="../assets/img/sert2.png"/>
+</div>
+<img alt="" src="../assets/img/logo.png"/>
+</a>
+</div>
+<div class="header_icons_block">
+<p>Самарская городская поликлиника  <br/> №6 Промышленного района</p>
+<p>Государственное бюджетное учреждение <br/> здравоохранения Самарской области</p>
+</div>
+<div class="header_icons_block_mobile">
+<a class="burger_click" href="javascript:void(0);">
+<div class="burger_stick1"></div>
+<div class="burger_stick2"></div>
+</a>
+<a href=""><img src="../assets/img/Снимок экрана 2024-10-14 165706.png"/></a>
+</div>
+</div>
+<div class="header_right_menu">
+<!-- <a class="header_right_menu_link" href="">Телефоны 
+                    <div>
+                        <i class="fi fi-rs-triangle"></i>
+                        
+                       
+                    </div>
+                </a> -->
+<div class="dropdown">
+<a class="dropbtn header_right_menu_link" href="/">Телефоны</a>
+<div class="dropdown-content dropdown-content_tel">
+<p>Для записи на прием</p>
+<span><a href="tel:88462500565">8(846)250-05-65</a></span>
+<p>Платное отделение</p>
+<span><a href="tel:88462500565">8(846)250-05-65</a></span>
+<p>ДМС</p>
+<span><a href="tel:88462500565">8(846)250-05-65</a></span>
+<p>ОМС</p>
+<span><a href="tel:88462500565">8(846)250-05-65</a></span>
+</div>
+</div>
+<div class="dropdown">
+<a class="dropbtn header_right_menu_link" href="/">О нас</a>
+<div class="dropdown-content">
+<a href="#">О поликлиннике</a>
+<a href="#">Новости</a>
+<a href="#">Свидетельство о регистрации</a>
+<a href="#">Сертификаты</a>
+<a href="#">Вакансии</a>
+<a href="#">Лицензия</a>
+<a href="#">Политика конфидециальности</a>
+<a href="#">Наши достижения</a>
+<a href="#">Контакты</a>
+<a href="#">Приказ об организации платных услуг</a>
+</div>
+</div>
+<div class="dropdown">
+<a class="dropbtn header_right_menu_link" href="/">Пациентам</a>
+<div class="dropdown-content">
+<a href="#">Общая информация</a>
+<a href="#">Вопрос-ответ</a>
+<a href="#">Дежурные врачи</a>
+<a href="#">Изменения в расписании</a>
+<a href="#">Порядок записи на прием к врачу</a>
+<a href="#">Порядок госпитализации</a>
+<a href="#">Права и обязанности граждан в сфере охраны здоровья</a>
+<a href="#">Правила поведения для пациентов и посетителей</a>
+<a href="#">Лекарственное обеспечение</a>
+<a href="#" style="color: rgba(92, 186, 234, 1);">Смотреть больше...</a>
+</div>
+</div>
+<div><a class="header_link_form header_header_link_form" href="">Записаться на прием</a></div>
+</div>
+</nav>
+<div class="nav_burger_block">
+<div class="burgerlogo">
+<div class="burger_logo_block">
+<img alt="" class="brg_logo1" src="../assets/img/logo.png"/>
+<div class="burger_logo_block2">
+<img alt="" class="brg_logo2" src="../assets/img/sert1.png"/>
+<img alt="" class="brg_logo2" src="../assets/img/sert2.png"/>
+</div>
+</div>
+<div class="burger_logo_block burger_logo_block1">
+<p>Самарская городская поликлиника №6 Промышленного района</p>
+<p>Государственное бюджетное учреждение здравоохранения Самарской области</p>
+</div>
+</div>
+<div class="burger_content">
+<div class="header_search header_search_burger">
+<input class="burger_input" placeholder="" type="text"/>
+<button class="brgr_btn_srch">
+<img alt="" src="/assets/img/input_search.png"/>
+</button>
+</div>
+<div class="burger_navbar">
+<div class="burger_nav_content">
+<div class="burger_navbar_block">
+<p>Телефоны</p>
+<i class="fi fi-rs-angle-small-down icon1"></i>
+</div>
+<div class="burger_navbar_block_open">
+<div class="burger_navbar_block_open_tel">
+<p>Для записи на прием</p>
+<a href="">8(846) 250-05-65</a>
+<p>Платное отделение</p>
+<a href="">8(846) 250-05-65</a>
+<p>ДМС</p>
+<a href="">8(846) 250-05-65</a>
+<p>ОМС</p>
+<a href="">8(846) 250-05-65</a>
+</div>
+</div>
+<div class="burger_navbar_block_open_border_bottom" style="display: block !important; height: 1px; width: 80%; background-color: rgba(237, 243, 248, 1); position: relative; z-index: 999; margin-left: 15px ;"></div>
+</div>
+<div class="burger_nav_content">
+<div class="burger_navbar_block burger_navbar_block2">
+<p>О нас</p>
+<i class="fi fi-rs-angle-small-down icon2"></i>
+</div>
+<div class="burger_navbar_block_open burger_navbar_block_open2">
+<div class="burger_navbar_block_open_tel">
+<p>Для записи на прием</p>
+<a href="">8(846) 250-05-65</a>
+<p>Платное отделение</p>
+<a href="">8(846) 250-05-65</a>
+<p>ДМС</p>
+<a href="">8(846) 250-05-65</a>
+<p>ОМС</p>
+<a href="">8(846) 250-05-65</a>
+</div>
+</div>
+<div class="burger_navbar_block_open_border_bottom" style="display: block !important; height: 1px; width: 80%; background-color: rgba(237, 243, 248, 1); position: relative; z-index: 999; margin-left: 15px ;"></div>
+</div>
+<div class="burger_nav_content">
+<div class="burger_navbar_block burger_navbar_block3">
+<p>Пациентам</p>
+<i class="fi fi-rs-angle-small-down icon3"></i>
+</div>
+<div class="burger_navbar_block_open burger_navbar_block_open3">
+<div class="burger_navbar_block_open_tel">
+<p>Для записи на прием</p>
+<a href="">8(846) 250-05-65</a>
+<p>Платное отделение</p>
+<a href="">8(846) 250-05-65</a>
+<p>ДМС</p>
+<a href="">8(846) 250-05-65</a>
+<p>ОМС</p>
+<a href="">8(846) 250-05-65</a>
+</div>
+</div>
+<div class="burger_navbar_block_open_border_bottom" style="display: block !important; height: 1px; width: 80%; background-color: rgba(237, 243, 248, 1); position: relative; z-index: 999; margin-left: 15px ;"></div>
+</div>
+<a class="burger_form" href="">Записаться на прием online</a>
+</div>
+</div>
+</div>
+<div class="header-services-and-poisk-group">
+<div class="swiper-container header_services_mobile">
+<div class="swiper-wrapper">
+<a class="swiper-slide header_services_block" href="/services/services.html">
+<div><img alt="" src="../assets/img/ic1.png"/></div>
+<p class="pslider">Платные услуги</p>
+</a>
+<a class="swiper-slide header_services_block" href="/vrachi/vrachi.html">
+<div><img alt="" src="../assets/img/ic2.png"/></div>
+<p>Врачи</p>
+</a>
+<a class="swiper-slide header_services_block" href="/price/price.html">
+<div><img alt="" src="../assets/img/ic3.png"/></div>
+<p>Цены</p>
+</a>
+<a class="swiper-slide header_services_block" href="/akcii/akcii.html">
+<div><img alt="" src="../assets/img/ic4.png"/></div>
+<p>Акции</p>
+</a>
+<a class="swiper-slide header_services_block" href="">
+<div><img alt="" src="../assets/img/ic5.png"/></div>
+<p>ОМС</p>
+</a>
+</div>
+</div>
+<div class="header_services">
+<a class="header_services_block" href="/services/services.html">
+<div><img alt="" src="../assets/img/ic1.png"/></div>
+<p>Платные услуги</p>
+</a>
+<a class="header_services_block" href="/vrachi/vrachi.html">
+<div><img alt="" src="../assets/img/ic2.png"/></div>
+<p>Врачи</p>
+</a>
+<a class="header_services_block" href="/price/price.html">
+<div><img alt="" src="../assets/img/ic3.png"/></div>
+<p>Цены</p>
+</a>
+<a class="header_services_block" href="/akcii/akcii.html">
+<div><img alt="" src="../assets/img/ic4.png"/></div>
+<p>Акции</p>
+</a>
+<a class="header_services_block" href="">
+<div><img alt="" src="../assets/img/ic5.png"/></div>
+<p>ОМС</p>
+</a>
+</div>
+<div class="header_bottom_menu">
+<!-- test  -->
+<!-- <div class="header_search header_searchNoNBrgr">
+                    <input placeholder="Поиск по сайту" type="text">
+                    <button>
+                        <img src="/assets/img/input_search.png" alt="">
+                    </button>
+                    
+                </div> -->
+<div class="header_search header_search_burger">
+<input class="burger_input" placeholder="Поиск по сайту" type="text"/>
+<button class="brgr_btn_srch">
+<img alt="" src="/assets/img/input_search.png"/>
+</button>
+</div>
+<div class="header_bad_vision" style="">
+<a href="" style="height: 100%; display: flex; align-items: center;"><img src="../assets/img/Снимок экрана 2024-10-14 165706.png" style="width: 60px;"/></a>
+</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="breadcrumb">
+<a href="/"><div>Главная</div></a>
+<a href="/vrachi/vrachi.html"><div style="color: rgba(174, 174, 174, 1);">Врачи</div></a>
+<div class="name" style="color: rgba(191, 200, 210, 1);">Байзульдинова Алия Сагиевна</div>
+</div>
+<h2 class="name">Байзульдинова Алия Сагиевна</h2>
+<div class="doctor_card">
+<img alt="" class="photo_card" src="../vrachi-detail/img/29.jpg"/>
+<div class="doctor_card_text">
+<h4>Информация о враче</h4>
+<div><p>Специализация</p> <span class="speciality">Оториноларингология</span></div>
+<div><p>Должность</p> <span class="role">Врач</span></div>
+<!-- <div><p>Ученая степень</p> <span>кандидат медицинских наук</span></div> -->
+<div class="doctor_card_text_btn_div"><a class="header_link_form doctor_card_text_btn" href="">Записаться к специалисту</a></div>
+</div>
+</div>
+<!-- <div class="doctor_text_wrapper">
+            <div class="doctor_text">
+                <h4>Образование</h4>
+    
+                <ul>
+                    <li>2001 г. - Ереванский государственный медицинский университет им. М. Гераци.</li>
+                    <li>2003 г. - Ординатура по специальности «Акушерство и гинекология» на кафедре акушерства и гинекологии Московской медицинской академии имени И.М.Сеченова.</li>
+                    <li>Аспирантура: на кафедре акушерства и гинекологии Московской медицинской академии имени И.М.Сеченова.</li>
+                    <li>Дополнительно: курсы повышения квалификации на базе Московского государственного медико-стоматологического университета по теме: «Современные проблемы акушерства и гинекологии (репродуктивная медицина и хирургия с курсом эндоскопии)».                </li>
+                    <li>Профессиональная переподготовка по программе «Организация здравоохранения и общественное здоровье» на базе «Государственного университета управления».</li>
+                </ul>
+    
+                <h4>Опыт работы</h4>
+                <ul>
+    
+                    
+    
+    
+                    <li>С 2018 г. - главный врач Клиники «Мать и дитя» Лефортово.</li>
+                    <li>2012–2020 гг. - главный врач Клиники «Мать и дитя» Новогиреево.</li>
+                    <li>2007–2012 гг. - врач акушер-гинеколог Клиники «Мать и дитя» Новогиреево. </li>
+                    <li>2005–2012 гг. - врач акушер-гинеколог по оказании экстренной круглосуточной помощи МУЗ «Подольский родильный дом».</li>
+                </ul>
+    
+                <h4>Профессиональный навыки</h4>
+                <ul>
+                    <li>Индивидуальное ведение беременности и родов, в том числе и у пациенток группы риска, все виды акушерских операций.</li>
+                    <li>Современные методы диагностики и лечения больных с эндокринными заболеваниями (диагностика и лечение нарушений функции гипоталамо-гипофизарно-яичниковой системы, надпочечников, их неоперативная коррекция). </li>
+                    <li>Наблюдение и ведение пациенток с гиперандрогений, гирсутизмом, синдромом поликистозных яичников, метаболическим синдромом. гиперпролактинемией. </li>
+                    <li>Диагностика и лечение нарушений менструальной функции, включая аменорею. Диагностика и лечение климактерических расстройств. </li>
+                    <li>Индивидуальный подбор схем заместительной гормональной терапии. Диагностика и лечение причины бесплодия и невынашивания беременности.</li>
+                    <li>Малые хирургические операци (гистероскопия, раздельное диагностическое выскабливание, полипэктомия).</li>
+                </ul>
+            </div>
+        </div> -->
+</div>
+<footer>
+<div class="footer_row_one">
+<div class="header_icons header_icons_footer">
+<div class="header_icons_block">
+<a class="header_icons_block_link header_icons_block_link_foot" href="/">
+<div class="header_icons_block_link_div">
+<img alt="" class="footer_logos" src="../assets/img/sert1.png"/>
+<img alt="" class="footer_logos" src="../assets/img/sert2.png"/>
+</div>
+<img alt="" class="footer_logo footer_logo-foot" src="../assets/img/logo.png"/>
+</a>
+</div>
+<div class="header_icons_block header_icons_blockFooter" style="display: block;">
+<p>Самарская городская поликлиника <br/> N6 Промышленного района</p>
+<p>Государственное бюджетное учреждение <br/> здравоохранения Самарской области</p>
+</div>
+</div>
+<div class="footer_row_one_block">
+<a class="footer_row_one_block_tel" href="">8(846) 250-05-65</a>
+<div><a class="footer_link1" href="">Позвоните мне</a></div>
+<div><a class="footer_link2" href="">Записаться на прием</a></div>
+</div>
+<div class="footer_adapt_block">
+<div class="footer_adapt_block_tel_soc">
+<a class="footer_adapt_block_tel_socTel" href="">8(846) 250-05-65</a>
+<div class="socialF">
+<a href="">
+<img alt="" src="../assets/img/soc3 (3).png"/>
+</a>
+<a href="">
+<img alt="" src="../assets/img/soc3 (3).png"/>
+</a>
+<a href="">
+<img alt="" src="../assets/img/soc3 (3).png"/>
+</a>
+</div>
+</div>
+<div class="footerLinks">
+<a href="">Все врачи</a>
+<a href="">Записаться на прием</a>
+</div>
+</div>
+</div>
+<div class="footer_row_two">
+<div class="footer_row_two_link">
+<div class="footer_row_two_block">
+<a href="">О нас</a>
+<a href="">Услуги ОМС</a>
+<a href="">Пациентам</a>
+<a href="">Контакты</a>
+</div>
+<div class="footer_row_two_block">
+<a href="">Врачи</a>
+<a href="">Цены</a>
+<a href="">Акции</a>
+<a href="">Платные услуги</a>
+</div>
+</div>
+<div class="footer_row_two_social">
+<div>
+<a href=""><img alt="" src="../assets/img/wsapp.png"/></a>
+<a href=""><img alt="" src="../assets/img/tg.png"/></a>
+<a href=""><img alt="" src="../assets/img/vk.png"/></a>
+</div>
+<a class="conf_polit" href="">Политика конфидециальности</a>
+<p class="conf_polit_p">Все права защищены. © 2024 </p>
+</div>
+<!-- <div class="footer_row_two_block3"></div> -->
+</div>
+<div class="footer_row_three">
+            
+Информация, размещенная на данном сайте, не является публичной офертой в смысле статьи 435 Гражданского Кодекса Российской Федерации, носит исключительно информационно-вспомогательный характер и не предполагается для использования в коммерческих целях. Использование, информации, размещенной на данном сайте, в том числе с указанием данного сайта в качестве информационного источника без письменного согласия ГБУЗ СО СГП No6 Промышленного района запрещено. Любые риски, связанные с использованием информации, размещенной на данном сайте, несут исключительно посетители сайта.
+<div class="footer_conf">
+<a class="conf_polit2" href="">Политика конфидециальности</a>
+<p class="conf_polit_p">Все права защищены. © 2024 </p>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

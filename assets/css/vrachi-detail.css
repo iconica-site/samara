@@ -11,6 +11,7 @@
     width: 293px;
     height: 320px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .doctor_card_text {
