@@ -172,3 +172,33 @@
 
 
 
+// vrachi
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".docs_container_block");
+    const showMoreButton = document.querySelector(".show_more2");
+    const itemsToShow = 8; // Количество элементов для отображения за раз
+    let currentlyShown = itemsToShow; // Количество элементов, которые сейчас отображены
+  
+    // Скрываем все элементы, кроме первых 9
+    items.forEach((item, index) => {
+      if (index >= itemsToShow) {
+        item.style.display = "none";
+      }
+    });
+  
+    // Обработчик события для кнопки "Показать ещё"
+    showMoreButton.addEventListener("click", () => {
+      // Показываем следующие 9 элементов
+      for (let i = currentlyShown; i < currentlyShown + itemsToShow && i < items.length; i++) {
+        items[i].style.display = "block";
+      }
+      currentlyShown += itemsToShow;
+  
+      // Скрываем кнопку, если больше нечего показывать
+      if (currentlyShown >= items.length) {
+        showMoreButton.style.display = "none";
+      }
+    });
+  });
+  

@@ -70,6 +70,26 @@ h2 {
     pointer-events: none;
 }
 
+.show_more2 {
+    max-width: 189px;
+    border-radius: 100px;
+    border: solid 1px #5CBAEA;
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 500;
+    height: 39px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    user-select: none; 
+    margin-top: 20px;
+} 
+
+
 @media screen and (max-width: 850px) {
     .docs_container {
         justify-content: center;
