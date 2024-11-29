@@ -99,3 +99,44 @@
 
 
 
+import os
+
+# Содержимое для вставки
+head_content = """
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+"""
+
+div_content = """
+<img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+"""
+
+def process_html_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    # Вставка в <head>
+    if "<head>" in content:
+        content = content.replace("<head>", f"<head>\n{head_content}")
+    else:
+        print(f"Файл {file_path} не содержит <head>, пропущен.")
+        return
+
+    # Вставка в <div class="header_right_menu">
+    if '<div class="header_right_menu">' in content:
+        content = content.replace('<div class="header_right_menu">', f'<div class="header_right_menu">\n{div_content}')
+    else:
+        print(f"Файл {file_path} не содержит <div class=\"header_right_menu\">, пропущен.")
+        return
+
+    # Сохранение изменений
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(content)
+    print(f"Обработан файл: {file_path}")
+
+# Поиск всех HTML-файлов в текущей папке
+for root, _, files in os.walk('.'):
+    for file_name in files:
+        if file_name.endswith('.html'):
+            process_html_file(os.path.join(root, file_name))
+
