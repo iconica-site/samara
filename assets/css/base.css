@@ -76,7 +76,7 @@ a {
 }
 
 .swiper-slide {
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
     /* background: #fff; */
     display: flex;
@@ -125,6 +125,7 @@ a {
     margin-top: 15px;
     width: 295px;
     font-weight: 500;
+    margin-left: 15px;
 }
 
 .swiper-slide_block p {
