@@ -99,44 +99,40 @@
 
 
 
-import os
+# import os
 
-# Содержимое для вставки
-head_content = """
-<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
-<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-"""
+# def update_html_scripts(directory):
+#     # Проверяем, существует ли папка
+#     if not os.path.exists(directory):
+#         print(f"Папка {directory} не найдена.")
+#         return
 
-div_content = """
-<img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
-"""
+#     # Обходим все файлы в папке
+#     for root, _, files in os.walk(directory):
+#         for file in files:
+#             if file.endswith(".html"):
+#                 file_path = os.path.join(root, file)
+#                 try:
+#                     # Читаем содержимое файла
+#                     with open(file_path, "r", encoding="utf-8") as f:
+#                         content = f.read()
 
-def process_html_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
-    
-    # Вставка в <head>
-    if "<head>" in content:
-        content = content.replace("<head>", f"<head>\n{head_content}")
-    else:
-        print(f"Файл {file_path} не содержит <head>, пропущен.")
-        return
+#                     # Заменяем нужный текст
+#                     updated_content = content.replace(
+#                         '<script src="/assets/js/main.js"></script>',
+#                         '<script src="../assets/js/main.js"></script>'
+#                     )
 
-    # Вставка в <div class="header_right_menu">
-    if '<div class="header_right_menu">' in content:
-        content = content.replace('<div class="header_right_menu">', f'<div class="header_right_menu">\n{div_content}')
-    else:
-        print(f"Файл {file_path} не содержит <div class=\"header_right_menu\">, пропущен.")
-        return
+#                     # Если изменения произошли, записываем обратно
+#                     if content != updated_content:
+#                         with open(file_path, "w", encoding="utf-8") as f:
+#                             f.write(updated_content)
+#                         print(f"Обновлено: {file_path}")
 
-    # Сохранение изменений
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(content)
-    print(f"Обработан файл: {file_path}")
+#                 except Exception as e:
+#                     print(f"Ошибка при обработке файла {file_path}: {e}")
 
-# Поиск всех HTML-файлов в текущей папке
-for root, _, files in os.walk('.'):
-    for file_name in files:
-        if file_name.endswith('.html'):
-            process_html_file(os.path.join(root, file_name))
+# # Укажите путь к папке vrachi-detail
+# directory_path = "vrachi-detail"
+# update_html_scripts(directory_path)
 
