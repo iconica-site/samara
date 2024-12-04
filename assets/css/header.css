@@ -567,7 +567,8 @@ nav {
     nav {
         height: 70px;
 
-        position: absolute;
+        /* position: absolute; */
+        position: fixed;
         background-color: white;
         z-index: 99999;
         top: 0;
