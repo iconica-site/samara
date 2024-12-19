@@ -158,9 +158,6 @@ a {
     background-color: rgba(92, 186, 234, 1);
     transition: 0.15s;
 }
-/* .swiper-slide {
-    height: auto !important;
-} */
 
 
 .header-services-and-poisk-group .swiper-slide {
@@ -171,4 +168,119 @@ a {
     .breadcrumb div {
         font-size: 14px;
     }
+}
+
+
+/*photos*/
+
+/* .swiper-slide_block img {
+    object-position: center 45%;
+} */
+.docs_container .docs_container_block:nth-child(2) img {
+    object-position: center 35%;
+}
+
+.docs_container .docs_container_block:nth-child(3) img {
+    object-position: center 45%;
+}
+
+.docs_container .docs_container_block:nth-child(4) img {
+    object-position: center 45%;
+}
+
+.docs_container .docs_container_block:nth-child(5) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(6) img {
+    object-position: center 45%;
+}
+
+.docs_container .docs_container_block:nth-child(7) img {
+    object-position: center 42%;
+}
+
+.docs_container .docs_container_block:nth-child(9) img {
+    object-position: center 42%;
+}
+
+.docs_container .docs_container_block:nth-child(11) img {
+    object-position: center 38%;
+}
+
+.docs_container .docs_container_block:nth-child(12) img {
+    object-position: center 35%;
+}
+
+.docs_container .docs_container_block:nth-child(13) img {
+    object-position: center 35%;
+}
+
+.docs_container .docs_container_block:nth-child(14) img {
+    object-position: center 35%;
+}
+
+.docs_container .docs_container_block:nth-child(17) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(20) img {
+    object-position: center 30%;
+}
+
+.docs_container .docs_container_block:nth-child(22) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(24) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(25) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(26) img {
+    object-position: center 0%;
+}
+
+.docs_container .docs_container_block:nth-child(27) img {
+    object-position: center 28%;
+}
+
+.docs_container .docs_container_block:nth-child(28) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(30) img {
+    object-position: center 35%;
+}
+
+.docs_container .docs_container_block:nth-child(31) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(32) img {
+    object-position: center 15%;
+}
+
+.docs_container .docs_container_block:nth-child(35) img {
+    object-position: center 15%;
+    object-fit: contain;
+}
+
+.docs_container .docs_container_block:nth-child(38) img {
+    object-position: center 35%;
+}
+
+.docs_container .docs_container_block:nth-child(39) img {
+    object-position: center 19%;
+}
+
+.docs_container .docs_container_block:nth-child(40) img {
+    object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(41) img {
+    object-position: center 40%;
 }
