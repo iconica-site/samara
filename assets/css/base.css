@@ -173,9 +173,18 @@ a {
 
 /*photos*/
 
-/* .swiper-slide_block img {
-    object-position: center 45%;
-} */
+.swiper-slide_block {
+    overflow: hidden;
+}
+
+.card30_img {
+    width: 295px;
+    height: 274px;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .docs_container .docs_container_block:nth-child(2) img {
     object-position: center 35%;
 }
@@ -250,6 +259,10 @@ a {
 
 .docs_container .docs_container_block:nth-child(28) img {
     object-position: center 40%;
+}
+
+.docs_container .docs_container_block:nth-child(29) img {
+    transform: scale(1.2);
 }
 
 .docs_container .docs_container_block:nth-child(30) img {
