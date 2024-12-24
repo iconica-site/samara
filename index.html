@@ -765,6 +765,20 @@ document.querySelector('.next').addEventListener('click', function() {
 
 <script src="./assets/js/main.js"></script>
 
+<script>
+
+    // Создаем элемент <link>
+    let favicon = document.createElement('link');
+
+// Задаем атрибуты для фавикона
+favicon.rel = 'icon'; // Тип: иконка
+favicon.href = '../assets/img/favicon.ico'; // Путь к фавикону
+
+// Вставляем фавикон в <head>
+document.head.appendChild(favicon);
+
+</script>
+
 </body>
 
 </html>
