@@ -19,20 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 бесплатного оказания гражданам
                 медицинской помощи</li></a>
             <a href="../YUridicheskaya_pomosch/YUridicheskaya_pomosch.html"> <li>Юридическая помощь</li></a>
-            <a href=""> <li>Прохождение медико-социальной
+            <a href="../Pr/Pr.html"> <li>Прохождение медико-социальной
                 экспертизы</li></a>
-            <a href=""><li>Оказание услуг по правовой и
+            <a href="../okazanie_uslug_po_pravovoj_i_psihologicheskoj_pomoshi_v_period_beremennosti_/okazanie_uslug_po_pravovoj_i_psihologicheskoj_pomoshi_v_period_beremennosti_.html"><li>Оказание услуг по правовой и
                 психологической помощи в период
                 беременности.</li></a>
-            <a href=""> <li>Политика в области менеджмента</li></a>
-            <a href=""> <li>Лицензии, сертификаты, свидетельства, Устав</li></a>
-            <a href=""> <li>Платные услуги</li></a>
-            <a href=""> <li>Наши партнеры</li></a>
-            <a href=""> <li>Организации, контролирующие деятельность поликлиники</li></a>
-            <a href=""> <li>Нормативные документы</li></a>
-            <a href=""> <li>Нормативные документы</li></a>
-            <a href=""> <li>Информация о страховых медицинских организациях</li></a>
-            <a href=""> <li>Горячие линии</li></a>
+            <a href="../Politika_v_oblasti_menedzhmenta/Politika_v_oblasti_menedzhmenta.html"> <li>Политика в области менеджмента</li></a>
+            <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html"> <li>Лицензии, сертификаты, свидетельства, Устав</li></a>
+            <a href="../services/services.html"><li>Платные услуги</li></a>
+            <a href="../Nashi_partnery/Nashi_partnery.html"><li>Наши партнеры</li></a>
+            <a href="../org_control/org_control.html"><li>Организации, контролирующие деятельность поликлиники</li></a>
+            <a href="../Normativnye_dokumenty/Normativnye_dokumenty.html"><li>Нормативные документы</li></a>
+            <a href="../info_strahovanie/info_strahovanie.html"><li>Информация о страховых медицинских организациях</li></a>
+            <a href="../Goryachii_linii/Goryachii_linii.html"><li>Горячие линии</li></a>
 
 
     </ul>
@@ -86,6 +85,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (document.querySelector('h1').textContent.trim() === 'Юридическая помощь') {
         document.querySelector('ul a:nth-child(10) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Прохождение медико-социальной экспертизы') {
+        document.querySelector('ul a:nth-child(11) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Оказание услуг по правовой и психологической помощи в период беременности.') {
+        document.querySelector('ul a:nth-child(12) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Политика в области менеджмента') {
+        document.querySelector('ul a:nth-child(13) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Лицензии, сертификаты, свидетельства, Устав') {
+        document.querySelector('ul a:nth-child(14) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Наши партнеры') {
+        document.querySelector('ul a:nth-child(16) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Организации, контролирующие деятельность поликлиники') {
+        document.querySelector('ul a:nth-child(17) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Нормативные документы') {
+        document.querySelector('ul a:nth-child(18) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Информация о страховых медицинских организациях') {
+        document.querySelector('ul a:nth-child(19) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Горячие линии') {
+        document.querySelector('ul a:nth-child(20) li').classList.add('active');
     }
 
 
