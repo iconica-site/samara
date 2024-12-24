@@ -76,18 +76,18 @@ header.innerHTML = `
     </div>
 
     <div class="dropdown">
-        <a href="../pacientam/pacientam.html" class="dropbtn header_right_menu_link">Пациентам</a>
+        <a href="../full-info/full-info.html" class="dropbtn header_right_menu_link">Пациентам</a>
         <div class="dropdown-content">
-            <a href="#">Общая информация</a>
+            <a href="../full-info/full-info.html">Общая информация</a>
             <a href="../vopros-otvet/vopros-otvet.html">Вопрос-ответ</a>
-            <a href="#">Дежурные врачи</a>
-            <a href="#">Изменения в расписании</a>
-            <a href="#">Порядок записи на прием к врачу</a>
-            <a href="#">Порядок госпитализации</a>
-            <a href="#">Права и обязанности граждан в сфере охраны здоровья</a>
-            <a href="#">Правила поведения для пациентов и посетителей</a>
-            <a href="#">Лекарственное обеспечение</a>
-            <a style="color: rgba(92, 186, 234, 1);" href="#">Смотреть больше...</a>
+            <a href="../dezhurnye_vrachi/dezhurnye_vrachi.html">Дежурные врачи</a>
+            <a href="../Izmeneniya_v_raspisanii/Izmeneniya_v_raspisanii.html">Изменения в расписании</a>
+            <a href="../Poryadok_zapisi_na_priem_k_vrachu/Poryadok_zapisi_na_priem_k_vrachu.html">Порядок записи на прием к врачу</a>
+            <a href="../poryadok_gospitalizatsii/poryadok_gospitalizatsii.html">Порядок госпитализации</a>
+            <a href="../prava_i_obyazannosti_grazhdan_v_sfere_ohrany_zdorov_ya/prava_i_obyazannosti_grazhdan_v_sfere_ohrany_zdorov_ya.html">Права и обязанности граждан в сфере охраны здоровья</a>
+            <a href="../pravila_povedeniya/pravila_povedeniya.html">Правила поведения для пациентов и посетителей</a>
+            <a href="../Programma_gosudarstvennyh_garantij_besplatnogo_okazaniya_grazhdanam_meditsinskoj_pomoschi/Programma_gosudarstvennyh_garantij_besplatnogo_okazaniya_grazhdanam_meditsinskoj_pomoschi.html">Программа государственных гарантий бесплатного оказания гражданам медицинской помощи</a>
+            <a style="color: rgba(92, 186, 234, 1);" href="../full-info/full-info.html">Смотреть больше...</a>
         </div>
     </div>
 
