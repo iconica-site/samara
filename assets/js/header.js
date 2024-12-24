@@ -76,7 +76,7 @@ header.innerHTML = `
     </div>
 
     <div class="dropdown">
-        <a href="/" class="dropbtn header_right_menu_link">Пациентам</a>
+        <a href="../pacientam/pacientam.html" class="dropbtn header_right_menu_link">Пациентам</a>
         <div class="dropdown-content">
             <a href="#">Общая информация</a>
             <a href="../vopros-otvet/vopros-otvet.html">Вопрос-ответ</a>
