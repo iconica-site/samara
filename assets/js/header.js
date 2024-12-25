@@ -41,7 +41,7 @@ header.innerHTML = `
 
 
     <div class="dropdown">
-        <a href="/" class="dropbtn header_right_menu_link">Телефоны</a>
+        <a href="#" class="dropbtn header_right_menu_link">Телефоны</a>
         <div class="dropdown-content dropdown-content_tel">
             <p>Для записи на прием</p>
             <span><a href="tel:88462500565">8(846)250-05-65</a></span>
@@ -65,13 +65,12 @@ header.innerHTML = `
             <a href="../o-nas/o-nas.html">О поликлиннике</a>
             <a href="../news/news.html">Новости</a>
             <a href="#">Свидетельство о регистрации</a>
-            <a href="#">Сертификаты</a>
-            <a href="#">Вакансии</a>
-            <a href="#">Лицензия</a>
-            <a href="#">Политика конфидециальности</a>
-            <a href="#">Наши достижения</a>
-            <a href="#">Контакты</a>
+            <a href="../vakansii/vakansii.html">Вакансии</a>
+            <a href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">Политика конфидециальности</a>
+            <a href="../Nashi_dostizheniya/Nashi_dostizheniya.html">Наши достижения</a>
+            <a href="../contacts/contacts.html">Контакты</a>
             <a href="#">Приказ об организации платных услуг</a>
+            <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html">Лицензии, сертификаты, свидетельства, Устав</a>
         </div>
     </div>
 
@@ -174,6 +173,7 @@ header.innerHTML = `
                 <p>О нас</p>
                 <i class="fi fi-rs-angle-small-down  icon2"></i>
             </div>
+
             <div class="burger_navbar_block_open burger_navbar_block_open2">
 
                 <div class="burger_navbar_block_open_tel">
@@ -181,7 +181,7 @@ header.innerHTML = `
                     <a href="../o-nas/o-nas.html">О поликлиннике</a>
                     <a href="../news/news.html">Новости</a>
                     <a href="#">Свидетельство о регистрации</a>
-                    <a href="#">Сертификаты</a>
+                    <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html">Лицензии, сертификаты, свидетельства, Устав</a>
                     <a style="color: rgba(92, 186, 234, 1);" href="../o-nas/o-nas.html">Смотреть
                         больше...</a>
 
@@ -202,12 +202,11 @@ header.innerHTML = `
 
                 <div class="burger_navbar_block_open_tel">
                     <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 5px;">
-                        <a href="#">Общая информация</a>
                         <a href="../pacientam/pacientam.html">Вопрос-ответ</a>
-                        <a href="#">Дежурные врачи</a>
-                        <a href="#">Изменения в расписании</a>
-                        <a href="#">Порядок записи на прием к врачу</a>
-                        <a style="color: rgba(92, 186, 234, 1);" href="../pacientam/pacientam.html">Смотреть
+                        <a href="../prava_i_obyazannosti_grazhdan_v_sfere_ohrany_zdorov_ya/prava_i_obyazannosti_grazhdan_v_sfere_ohrany_zdorov_ya.html">Права и обязанности граждан в сфере охраны здоровья</a>
+                        <a href="../pravila_povedeniya/pravila_povedeniya.html">Правила поведения для пациентов и посетителей</a>
+                        <a href="../Programma_gosudarstvennyh_garantij_besplatnogo_okazaniya_grazhdanam_meditsinskoj_pomoschi/Programma_gosudarstvennyh_garantij_besplatnogo_okazaniya_grazhdanam_meditsinskoj_pomoschi.html">Программа государственных гарантий бесплатного оказания гражданам медицинской помощи</a>
+                        <a style="color: rgba(92, 186, 234, 1);" href="../vopros-otvet/vopros-otvet.html">Смотреть
                             больше...</a>
                     </div>
                 </div>

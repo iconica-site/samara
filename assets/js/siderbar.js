@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('ul a:nth-child(2) li').classList.add('active');
     }
 
+    if (document.querySelector('h1').textContent.trim() === 'Свидетельство о регистрации') {
+        document.querySelector('ul a:nth-child(3) li').classList.add('active');
+    }
+
     if (document.querySelector('h1').textContent.trim() === 'Вакансии') {
         document.querySelector('ul a:nth-child(4) li').classList.add('active');
     }
@@ -49,6 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (document.querySelector('h1').textContent.trim() === 'Контакты') {
         document.querySelector('ul a:nth-child(7) li').classList.add('active');
+    }
+
+    if (document.querySelector('h1').textContent.trim() === 'Приказ об организации платных услуг') {
+        document.querySelector('ul a:nth-child(8) li').classList.add('active');
     }
 
     if (document.querySelector('h1').textContent.trim() === 'Лицензии, сертификаты, свидетельства, Устав') {
