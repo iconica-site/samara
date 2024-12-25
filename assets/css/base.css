@@ -6,6 +6,15 @@
     font-family: "Geologica", sans-serif;
 
 }
+
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+
 a {
     text-decoration: none;
     color: black;
