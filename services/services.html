@@ -80,7 +80,7 @@
                     <option value="rehabilitation">Медицинская реабилитация</option>
                     <option value="endoscopy">Эндоскопия</option>
                     <option value="psychologist">Услуги психолога</option>
-                    <option value="comprehensive-services">Комплексные услуги</option>
+                    <!-- <option value="comprehensive-services">Комплексные услуги</option> -->
                 </select>
 
 
@@ -168,7 +168,7 @@
                 </div>
             </div>
 
-            <div class="services_block">
+            <div id="test1" class="services_block">
                 <!-- <h3>Урология</h3> -->
 
                 <div class="service_row_container">
@@ -185,7 +185,7 @@
             </div>
 
 
-            <div class="services_block">
+            <div id="test2" class="services_block">
                 <!-- <h3>Оториноларингология</h3> -->
 
                 <div class="service_row_container">
@@ -203,7 +203,7 @@
 
             </div>
 
-            <div class="services_block">
+            <div id="test3" class="services_block">
                 <!-- <h3>Офтальмология</h3> -->
 
                 <div class="service_row_container">
@@ -221,7 +221,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test4" class="services_block">
                 <!-- <h3>Эндокринология</h3> -->
 
                 <div class="service_row_container">
@@ -239,7 +239,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test5" class="services_block">
                 <!-- <h3>Гастроэнтерология</h3> -->
 
                 <div class="service_row_container">
@@ -257,7 +257,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test6" class="services_block">
                 <!-- <h3>Акушерство и гинекология</h3> -->
 
                 <div class="service_row_container">
@@ -275,7 +275,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test7" class="services_block">
                 <!-- <h3>Ультразвуковая и функциональная диагностика</h3> -->
 
                 <div class="service_row_container">
@@ -293,7 +293,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test8" class="services_block">
                 <!-- <h3>Лабораторная диагностика</h3> -->
 
                 <div class="service_row_container">
@@ -311,7 +311,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test9" class="services_block">
                 <!-- <h3>Медицинские осмотры </h3> -->
 
                 <div class="service_row_container">
@@ -329,7 +329,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test10" class="services_block">
                 <!-- <h3> Добровольное медицинское страхованиеМедицинские осмотры </h3> -->
 
                 <div class="service_row_container">
@@ -347,7 +347,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test11" class="services_block">
                 
 
                 <div class="service_row_container">
@@ -365,7 +365,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test12" class="services_block">
                 
 
                 <div class="service_row_container">
@@ -383,7 +383,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div  class="services_block">
                 
 
                 <div class="service_row_container">
@@ -437,7 +437,7 @@
                 
             </div>
 
-            <div class="services_block">
+            <div id="test" class="services_block">
                 
 
                 <div class="service_row_container">
@@ -514,7 +514,45 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
+    <script>
+    
+    
+    
+    document.getElementById('specialization-select').addEventListener('change', function (event) {
+    const mapping = {
+        'ophthalmology': 'test1',
+        'endocrinology': 'test2',
+        'gastroenterology': 'test3',
+        'obstetrics-gynecology': 'test4',
+        'ultrasound-diagnostics': 'test5',
+        'lab-diagnostics': 'test6',
+        'medical-checkup': 'test7',
+        'insurance': 'test8',
+        'day-hospital': 'test9',
+        'kinesio-taping': 'test10',
+        'physiotherapy-massage': 'test11',
+        'rehabilitation': 'test12',
+        'endoscopy': 'test13',
+        'psychologist': 'test14'
+    };
 
+    const targetId = mapping[event.target.value];
+    if (targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth' // Плавная прокрутка
+            });
+        }
+    }
+});
+
+
+
+
+
+
+    </script>
 
 
 
