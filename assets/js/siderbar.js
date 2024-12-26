@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <ul>
         <a href="../o-nas/o-nas.html"><li>О нас</li></a>
         <a href="../news/news.html"><li>Новости</li></a>
-        <a href=""><li>Свидетельство о регистрации</li></a>
+        <a href="../svidetelstvo_reg/svidetelstvo_reg.html"><li>Свидетельство о регистрации</li></a>
         <a href="../vakansii/vakansii.html"><li>Вакансии</li></a>
         <a href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html"><li>Политика конфиденциальности</li></a>
         <a href="../Nashi_dostizheniya/Nashi_dostizheniya.html"><li>Наши достижения</li></a>
