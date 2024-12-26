@@ -33,7 +33,7 @@ nav {
     gap: 10px;
 
     position: relative;
-    z-index: 999;
+    z-index: 998;
 }
 .header_icons div:nth-child(1) {
     /* width: 118px;

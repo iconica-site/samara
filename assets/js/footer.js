@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a target="_blank" href="https://t.me/Sgp6_samara"><img src="../assets/img/tg.png" alt=""></a>
             <a target="_blank" href="https://vk.com/sgp6plus"><img src="../assets/img/vk.png" alt=""></a>
         </div>
-        <a class="conf_polit" href="">Политика конфиденциальности</a>
+        <a class="conf_polit" href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">Политика конфиденциальности</a>
         <p class="conf_polit_p">Все права защищены. © 2024 </p>
     </div>
 </div>
