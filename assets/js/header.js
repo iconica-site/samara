@@ -69,8 +69,8 @@ header.innerHTML = `
             <a href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">Политика конфидециальности</a>
             <a href="../Nashi_dostizheniya/Nashi_dostizheniya.html">Наши достижения</a>
             <a href="../contacts/contacts.html">Контакты</a>
-            <a href="#">Приказ об организации платных услуг</a>
-            <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html">Лицензии, сертификаты, свидетельства, Устав</a>
+            <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html">Приказ об организации платных услуг</a>
+            <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html">Лицензии, сертификаты, свидетельства, устав</a>
         </div>
     </div>
 
@@ -300,6 +300,13 @@ header.innerHTML = `
 
 </div>
 </div>
+
+
+
+
+
+
+
 
 `;
 

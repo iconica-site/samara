@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html"><li>Политика конфиденциальности</li></a>
         <a href="../Nashi_dostizheniya/Nashi_dostizheniya.html"><li>Наши достижения</li></a>
         <a href="../contacts/contacts.html"><li>Контакты</li></a>
-        <a href=""><li>Приказ об организации платных услуг</li></a>
-        <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html"> <li>Лицензии, сертификаты, свидетельства, Устав</li></a>
+        <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html"><li>Приказ об организации платных услуг</li></a>
+        <a href="../Litsenzii__sertifikaty__svidetel_stva__Ustav/Litsenzii__sertifikaty__svidetel_stva__Ustav.html"> <li>Лицензии, сертификаты, свидетельства, устав</li></a>
     </ul>
 
     `;
