@@ -801,16 +801,17 @@
                 <p style="color: rgba(92, 186, 234, 1); font-size: 16px; margin: 0 0 20px;">СГП №6 Внебюджетное
                     отделение Самара</p>
                 <p style="font-size: 16px; margin: 0 0 20px;">Запись на прием</p>
-                <form id="popupForm">
-                    <input type="text" placeholder="Как вас зовут?" required
+                <form id="popupForm" action="./assets/forms/form1.php" method="POST">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required
                         style="width: 100%; margin-bottom: 15px; padding: 10px; font-size: 14px;">
-                    <input type="tel" placeholder="Номер телефона" required
+                    <input type="tel" name="phone" placeholder="Номер телефона" required
                         style="width: 100%; margin-bottom: 15px; padding: 10px; font-size: 14px;">
-                    <textarea placeholder="Ваш вопрос" rows="4" required
+                    <textarea name="question" placeholder="Ваш вопрос" rows="4" required
                         style="width: 100%; margin-bottom: 15px; padding: 10px; font-size: 14px; resize: none;"></textarea>
                     <button type="submit"
                         style="width: 100%; margin-bottom: 15px; padding: 10px; background: rgba(92, 186, 234, 1); color: white; border: none; cursor: pointer; transition: 0.15s;">Отправить</button>
                 </form>
+                
             </div>
         </div>
 
