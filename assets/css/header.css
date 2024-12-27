@@ -194,7 +194,8 @@ nav {
 
 .header_bottom_menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: normal;
     max-width: 1340px;
     width: 100%;
     margin: 0 auto; 
@@ -553,6 +554,10 @@ nav {
         height: 46px !important;
     }
 
+    .headerSocLinks {
+        display: none;
+    }
+
 
 
 
@@ -778,4 +783,24 @@ nav {
     .header_services_block {
         padding-bottom: 15px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+
+.headerSocLinks {
+    position: relative;
+    right: 30px;
 }
