@@ -380,7 +380,7 @@
         </div>
 
 
-        <div class="call-button" id="callButton" style="position: fixed; right: 100px; bottom: 100px; cursor: pointer;">
+        <div class="call-button" id="callButton" style="position: fixed; right: 100px; bottom: 670px; cursor: pointer;">
             <img style="width: 100px;" src="./assets/img/call.png" alt="">
         </div>
 
@@ -973,6 +973,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let burger_formBtnMobile = document.querySelector('.burger_form');
     let mobileBtnForm = document.querySelector('.mobileBtnForm');
     let footer_link2 = document.querySelector('.footer_link2');
+    let call_button = document.querySelector('.call-button');
 
    
     
@@ -998,6 +999,7 @@ document.addEventListener('DOMContentLoaded', () => {
     burger_formBtnMobile.addEventListener('click', openForm);
     mobileBtnForm.addEventListener('click', openForm);
     footer_link2.addEventListener('click', openForm);
+    call_button.addEventListener('click', openForm);
 
     // Закрытие формы
     closeButton.addEventListener('click', closeForm);

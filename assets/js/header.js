@@ -356,7 +356,9 @@ header.innerHTML = `
     </form>
 </div>
 
-
+<div class="call-button" id="callButton" style="position: fixed; right: 100px; bottom: 670px; cursor: pointer;">
+<img style="width: 100px;" src="../assets/img/call.png" alt="">
+</div>
 
 
 
@@ -556,6 +558,7 @@ burger_click.addEventListener('click', function() {
             const closeButton = document.querySelector('.cross');
             const bodyOver = document.body;
             let burger_formBtnMobile = document.querySelector('.burger_form');
+            let call_button = document.querySelector('.call-button');
         
             
         
@@ -578,6 +581,7 @@ burger_click.addEventListener('click', function() {
             // Открытие формы
             openButton.addEventListener('click', openForm);
             burger_formBtnMobile.addEventListener('click', openForm);
+            call_button.addEventListener('click', openForm);
             
         
             // Закрытие формы

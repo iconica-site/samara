@@ -311,3 +311,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+        
+// Найдем все кнопки в блоке left_menu_btns_row
+const buttons = document.querySelectorAll('.left_menu_btns_row button');
+
+// Первый и последний элементы кнопок
+const firstButton = buttons[0];
+const lastButton = buttons[buttons.length - 1];
+
+// Имитируем клик на кнопке с id="callButton" при клике на первый элемент
+firstButton.addEventListener('click', function() {
+    const callButton = document.getElementById('callButton');
+    if (callButton) {
+        callButton.click();  // Имитируем клик на callButton
+    }
+});
+
+// Имитируем клик на кнопке с class="footer_link1" при клике на последний элемент
+lastButton.addEventListener('click', function() {
+    const footerLink = document.querySelector('.footer_link1');
+    if (footerLink) {
+        footerLink.click();  // Имитируем клик на footer_link1
+    }
+});
