@@ -356,9 +356,9 @@ header.innerHTML = `
     </form>
 </div>
 
-<div class="call-button" id="callButton" style="position: fixed; right: 100px; bottom: 670px; cursor: pointer;">
-<img style="width: 100px;" src="../assets/img/call.png" alt="">
-</div>
+        <div class="call-button" id="callButton" style="position: fixed; right: 20px; top: 20px; z-index: 9999999; cursor: pointer;">
+            <img style="width: 100px;" src="./assets/img/call.png" alt="">
+        </div>
 
 
 
