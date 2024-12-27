@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <div class="footer_row_two_social">
         <div>
-        <a target="_blank" href="https://wa.me/89033011301"><img src="../assets/img/wsapp.png" alt="WhatsApp"></a>
+            <a target="_blank" href="https://wa.me/89033011301"><img src="../assets/img/wsapp.png" alt="WhatsApp"></a>
             <a target="_blank" href="https://t.me/Sgp6_samara"><img src="../assets/img/tg.png" alt=""></a>
             <a target="_blank" href="https://vk.com/sgp6plus"><img src="../assets/img/vk.png" alt=""></a>
         </div>

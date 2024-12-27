@@ -446,3 +446,8 @@ a {
         display: none;
     }
 }
+
+
+.price-block-service {
+    cursor: pointer;
+}
