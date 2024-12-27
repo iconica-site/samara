@@ -294,9 +294,9 @@ header.innerHTML = `
 
 
     <div  class="headerSocLinks">
-        <a  target="_blank" href="https://wa.me/89033011301"><img style="width: 65px; height: 70px;" src="./assets/img/wsapp.png" alt="WhatsApp"></a>
-        <a target="_blank"  href="https://t.me/Sgp6_samara"><img style="width: 65px; height: 70px;" target="_blank" src="./assets/img/tg.png" alt=""></a>
-        <a  target="_blank" href="https://vk.com/sgp6plus"><img style="width: 65px; height: 70px;" src="./assets/img/vk.png" alt=""></a>
+        <a  target="_blank" href="https://wa.me/89033011301"><img style="width: 65px; height: 70px;" src="../assets/img/wsapp.png" alt="WhatsApp"></a>
+        <a target="_blank"  href="https://t.me/Sgp6_samara"><img style="width: 65px; height: 70px;" target="_blank" src="../assets/img/tg.png" alt=""></a>
+        <a  target="_blank" href="https://vk.com/sgp6plus"><img style="width: 65px; height: 70px;" src="../assets/img/vk.png" alt=""></a>
     </div>
 
 
