@@ -422,12 +422,15 @@ body {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
+    transition: opacity 0.15s ease, max-height 0.15s ease;
 }
 
 .price-service-more.active {
     opacity: 1;
-    max-height: 500px; /* Поставьте максимальную высоту, которая подходит вашему контенту */
+    /* max-height: 500px; /* Поставьте максимальную высоту, которая подходит вашему контенту */
+
+
+    max-height: 100%;
 }
 
 .chevronImg {
