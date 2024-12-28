@@ -361,7 +361,7 @@ header.innerHTML = `
         </div>
 
         <div class="buttonUp" id="buttonUp" style="position: fixed; left: 20px; bottom: 20px; z-index: 9999999; cursor: pointer;">
-            <a href="#topHeader"><img style="filter: brightness(1.4);"; width="100px" src="../assets/img/upImg2.png" alt=""></a>
+            <a href="#topHeader"><img style="filter: brightness(1.4) drop-shadow(2px 4px 6px black);"; width="100px" src="../assets/img/upImg2.png" alt=""></a>
         </div>
 
 
