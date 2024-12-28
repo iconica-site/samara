@@ -194,8 +194,8 @@ nav {
 
 .header_bottom_menu {
     display: flex;
-    /* justify-content: space-between; */
-    justify-content: normal;
+    justify-content: space-between;
+    /* justify-content: normal; */
     max-width: 1340px;
     width: 100%;
     margin: 0 auto; 
@@ -803,4 +803,8 @@ nav {
 .headerSocLinks {
     position: relative;
     right: 30px;
+}
+
+#callButton {
+    filter: drop-shadow(2px 4px 6px black);
 }
