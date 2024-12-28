@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="footer_row_one">
     <div class="header_icons header_icons_footer">
         <div class="header_icons_block">
-            <a class="header_icons_block_link header_icons_block_link_foot" href="/">
+            <a class="header_icons_block_link header_icons_block_link_foot" href="../index.html">
                 <div class="header_icons_block_link_div">
                     <img class="footer_logos" src="../assets/img/sert1.png" alt="">
                     <img class="footer_logos" src="../assets/img/sert2.png" alt="">
