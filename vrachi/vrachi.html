@@ -551,13 +551,14 @@ var swiper1 = new Swiper('.header_services_mobile', {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Устанавливаем всем ссылкам href="javascript:void(0)"
-    document.querySelectorAll('a').forEach(link => {
-        link.setAttribute('href', 'javascript:void(0)');
-    });
+    document.querySelectorAll('.swiper-slide_block a').forEach(link => {
+    link.setAttribute('href', 'javascript:void(0)');
+});
+
 
 
     // Находим все элементы с классом "swiper-slide_block"
-const swiperSlideBlocks = document.querySelectorAll('.swiper-slide_block');
+const swiperSlideBlocks = document.querySelectorAll('.swiper-slide_block a');
 
 // Добавляем обработчик клика к каждому из них
 swiperSlideBlocks.forEach(block => {
