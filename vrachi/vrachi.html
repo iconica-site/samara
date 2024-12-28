@@ -92,7 +92,7 @@
                     <img src="../vrachi-detail/img/1.jpg" alt="">
                     <h4>Бекназарова Юлия Вячеславовна</h4>
                     <p>Терапия <br> Врач</p>
-                    <a href="../vrachi-detail/vrachi-detail1.html">Записаться на прием</a>
+                    <a href="../vrachi-detail/vrachi-detail1.html">dsdsdsds</a>
                 </div>
             </div>
         
@@ -160,15 +160,7 @@
         
             
         
-            <!-- Карточка 10 -->
-            <div class="docs_container_block">
-                <div class="swiper-slide_block">
-                    <img src="../vrachi-detail/img/10.JPG" alt="">
-                    <h4>Дорофеева Инна Владимировна</h4>
-                    <p>Рентгенология <br> Медицинская сестра</p>
-                    <a href="../vrachi-detail/vrachi-detail10.html">Записаться на прием</a>
-                </div>
-            </div>
+            
         
             <!-- Карточка 11 -->
             <div class="docs_container_block">
@@ -509,6 +501,16 @@
             </div>
         </div>
 
+        <!-- Карточка 10 -->
+        <div class="docs_container_block">
+            <div class="swiper-slide_block">
+                <img src="../vrachi-detail/img/10.JPG" alt="">
+                <h4>Дорофеева Инна Владимировна</h4>
+                <p>Рентгенология <br> Медицинская сестра</p>
+                <a href="../vrachi-detail/vrachi-detail10.html">Записаться на прием</a>
+            </div>
+        </div>
+
 
 
 
@@ -542,6 +544,41 @@ var swiper1 = new Swiper('.header_services_mobile', {
     // grabCursor: true, // Указатель мыши меняется на "руку"
     loop: false, // Отключаем бесконечную прокрутку
 });
+
+</script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Устанавливаем всем ссылкам href="javascript:void(0)"
+    document.querySelectorAll('a').forEach(link => {
+        link.setAttribute('href', 'javascript:void(0)');
+    });
+
+
+    // Находим все элементы с классом "swiper-slide_block"
+const swiperSlideBlocks = document.querySelectorAll('.swiper-slide_block');
+
+// Добавляем обработчик клика к каждому из них
+swiperSlideBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+        // Находим элемент для имитации клика
+        const targetElement = document.querySelector('.header_link_form.header_header_link_form');
+        if (targetElement) {
+            targetElement.click(); // Имитация клика
+        } else {
+            console.error('Элемент для имитации клика не найден.');
+        }
+    });
+});
+
+
+
+    
+});
+
+
+
 
 </script>
 
