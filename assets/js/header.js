@@ -3,7 +3,7 @@ let header = document.createElement('header');
 
 // Добавляем содержимое в header (убираем лишний тег <header> в строке innerHTML)
 header.innerHTML = `
-<nav>
+<nav id="topHeader">
 <div class="header_icons">
     <div class="header_icons_block">
         <a href="../index.html">
@@ -358,6 +358,10 @@ header.innerHTML = `
 
         <div class="call-button" id="callButton" style="position: fixed; right: 20px; bottom: 20px; z-index: 9999999; cursor: pointer;">
             <img style="width: 100px;" src="../assets/img/call.png" alt="">
+        </div>
+
+        <div class="buttonUp" id="buttonUp" style="position: fixed; left: 20px; bottom: 20px; z-index: 9999999; cursor: pointer;">
+            <a href="#topHeader"><img style="filter: brightness(1.4);"; width="100px" src="../assets/img/upImg2.png" alt=""></a>
         </div>
 
 
