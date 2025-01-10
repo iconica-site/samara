@@ -281,7 +281,7 @@ nav {
 .dropdown-content_tel {
     display: none;
     width: 431px;
-    height: 344px;
+    /* height: 344px; */
     
     gap: 10px;
     padding-left: 40px;
