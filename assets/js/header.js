@@ -597,23 +597,5 @@ burger_click.addEventListener('click', function() {
 
 
 
-        const head = document.head;
-
-        // Создаем первый тег <link> для preconnect к fonts.googleapis.com
-        const preconnect1 = document.createElement('link');
-        preconnect1.rel = 'preconnect';
-        preconnect1.href = 'https://fonts.googleapis.com';
-        head.appendChild(preconnect1);
-
-        // Создаем второй тег <link> для preconnect к fonts.gstatic.com
-        const preconnect2 = document.createElement('link');
-        preconnect2.rel = 'preconnect';
-        preconnect2.href = 'https://fonts.gstatic.com';
-        preconnect2.crossOrigin = 'anonymous'; // Указываем атрибут crossorigin
-        head.appendChild(preconnect2);
-
-        // Создаем третий тег <link> для подключения шрифта
-        const fontLink = document.createElement('link');
-        fontLink.rel = 'stylesheet';
-        fontLink.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap';
-        head.appendChild(fontLink);
+        
+        
