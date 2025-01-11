@@ -550,6 +550,94 @@
 
 
 
+////// поиск
+
+ // Находим элементы
+const searchInput = document.querySelector('.list_find_block_search input');
+const searchButton = document.querySelector('.iconFind');
+const servicesBlocks = document.querySelectorAll('.services_block'); // Находим все блоки `.services_block`
+
+// Создаем элемент для сообщения (один раз)
+const noResultsMessage = document.createElement('div');
+noResultsMessage.textContent = 'Ничего не найдено, попробуйте еще раз.';
+noResultsMessage.style.display = 'none'; // Скрываем по умолчанию
+noResultsMessage.style.textAlign = 'center'; // Центрируем текст
+noResultsMessage.style.marginTop = '20px';
+noResultsMessage.style.color = 'gray';
+noResultsMessage.style.fontSize = '16px';
+noResultsMessage.style.fontStyle = 'italic';
+document.body.appendChild(noResultsMessage); // Добавляем сообщение в конец страницы
+
+// Функция поиска
+function filterServices() {
+    const query = searchInput.value.trim().toLowerCase(); // Получаем запрос в нижнем регистре
+    let hasAnyResults = false; // Глобальный флаг, чтобы проверить, найден ли хотя бы один элемент
+
+    // Обрабатываем каждый блок .services_block
+    servicesBlocks.forEach(block => {
+        const serviceRows = block.querySelectorAll('.services_row'); // Находим строки в текущем блоке
+        let hasResultsInBlock = false; // Флаг для проверки, есть ли совпадения в текущем блоке
+
+        serviceRows.forEach(row => {
+            const serviceName = row.querySelector('p').textContent.toLowerCase(); // Имя услуги в нижнем регистре
+
+            if (serviceName.includes(query)) {
+                row.parentElement.style.display = 'block'; // Показываем элемент (ссылку с блоком)
+                hasResultsInBlock = true; // Устанавливаем флаг для текущего блока
+                hasAnyResults = true; // Устанавливаем глобальный флаг
+            } else {
+                row.parentElement.style.display = 'none'; // Скрываем элемент
+            }
+        });
+
+        // Скрываем или показываем сам блок в зависимости от наличия совпадений
+        block.style.display = hasResultsInBlock ? 'block' : 'none';
+    });
+
+    // Управляем глобальным сообщением
+    if (hasAnyResults) {
+        noResultsMessage.style.display = 'none'; // Скрываем сообщение
+    } else {
+        noResultsMessage.style.display = 'block'; // Показываем сообщение
+    }
+}
+
+// Привязываем обработчик к кнопке
+searchButton.addEventListener('click', filterServices);
+
+// Также добавляем обработчик на нажатие Enter
+searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        filterServices();
+    }
+});
+
+
+
+
+////изменение цвета
+
+
+document.getElementById('specialization-select').addEventListener('change', function() {
+    // Снимаем подсветку со всех p элементов
+    const paragraphs = document.querySelectorAll('.services_row p');
+    paragraphs.forEach(p => p.style.color = '');  // Убираем красный цвет
+
+    // Получаем значение выбранного option
+    const selectedValue = this.options[this.selectedIndex].text;
+
+    // Если выбран не пустой вариант, то подсвечиваем соответствующий p элемент
+    if (selectedValue && selectedValue !== "Специализация") {
+        const matchingParagraph = Array.from(paragraphs).find(p => p.textContent.trim() === selectedValue);
+        if (matchingParagraph) {
+            matchingParagraph.style.color = 'rgba(92, 186, 234, 1)';  // Подсвечиваем красным
+        }
+    }
+});
+
+
+
+
 
 
     </script>
