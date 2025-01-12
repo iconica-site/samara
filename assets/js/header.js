@@ -361,7 +361,7 @@ header.innerHTML = `
         <span
             style="font-family: Manrope, serif; margin-top: 10px; font-size: 14px; max-width: 500px; width: 100%; text-align: center; line-height: 14px; color: rgba(255, 255, 255, 0.692);">нажимая
             кнопку, я соглашаюсь на обработку моих персональных данных, в соответствии с <a style="color: white;"
-                href="./Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">политикой конфиденциальности</a></span>
+                href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">политикой конфиденциальности</a></span>
     </form>
 </div>
 

@@ -178,57 +178,45 @@
 
                             <div class="swiper-slide">
                                 <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
+                                    <img src="../vrachi-detail/img/21.jpg" alt="">
+                                    <h4>Корочук Светлана <br> Леонидовна</h4>
+                                    <p>Оториноларингология <br> Врач</p>
+                                    <a href="javascript:void(0)">Записаться на прием</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
+                                    <img style="    object-position: center 35%;" src="../vrachi-detail/img/22.jpg" alt="">
+                                    <h4>Васин Борис <br> Алексеевич</h4>
+                                    <p>Оториноларингология <br> Врач</p>
+                                    <a href="javascript:void(0)">Записаться на прием</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
+                                    <img src="../vrachi-detail/img/23.jpg" alt="">
+                                    <h4>Скопина Анастасия <br> Петровна</h4>
+                                    <p>Оториноларингология <br> Врач</p>
+                                    <a href="javascript:void(0)">Записаться на прием</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
+                                    <div style="    position: relative;
+                                    left: 8px;" class="card30_img"><img style="object-position: center 40%;
+                                        transform: scale(1.2);" src="../vrachi-detail/img/29.jpg" alt=""></div>
+                                    <h4>Байзульдинова Алия <br> Сагиевна</h4>
+                                    <p>Оториноларингология <br> Врач</p>
+                                    <a href="javascript:void(0)">Записаться на прием</a>
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
-                                <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
-                                </div>
-                            </div>
+                           
 
-                            <div class="swiper-slide">
-                                <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
-                                </div>
-                            </div>
+                            
 
 
 
@@ -290,6 +278,24 @@
         document.querySelector('.next').addEventListener('click', function () {
             swiper.slideNext(); // Переход к следующему слайду
         });
+
+
+
+            // Находим все элементы с классом "swiper-slide_block"
+const swiperSlideBlocks = document.querySelectorAll('.swiper-slide_block a');
+
+// Добавляем обработчик клика к каждому из них
+swiperSlideBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+        // Находим элемент для имитации клика
+        const targetElement = document.querySelector('.header_link_form.header_header_link_form');
+        if (targetElement) {
+            targetElement.click(); // Имитация клика
+        } else {
+            console.error('Элемент для имитации клика не найден.');
+        }
+    });
+});
 
 
 
