@@ -50,6 +50,7 @@
 
         <div class="list_find_block">
             <div class="list_find_block_list">
+
                 <select id="specialization-select">
                     <option value="">Специализация</option>
                     <option value="therapy">Терапия</option>
@@ -579,6 +580,60 @@ swiperSlideBlocks.forEach(block => {
 });
 
 
+
+
+const specializationMapping = {
+    "therapy": "терапия",
+    "neurology": "неврология",
+    "surgery": "хирургия",
+    "urology": "урология",
+    "otorhinolaryngology": "оториноларингология",
+    "ophthalmology": "офтальмология",
+    "endocrinology": "эндокринология",
+    "gastroenterology": "гастроэнтерология",
+    "obstetrics-gynecology": "акушерство и гинекология",
+    "ultrasound-diagnostics": "ультразвуковая и функциональная диагностика",
+    "lab-diagnostics": "лабораторная диагностика",
+    "medical-checkup": "медицинские осмотры",
+    "insurance": "добровольное медицинское страхование",
+    "day-hospital": "дневной стационар",
+    "kinesio-taping": "кинезеотейпирование",
+    "physiotherapy-massage": "физиотерапия и массаж",
+    "rehabilitation": "медицинская реабилитация",
+    "endoscopy": "эндоскопия",
+    "psychologist": "услуги психолога"
+};
+
+document.getElementById('specialization-select').addEventListener('change', function() {
+    const selectedSpecialization = this.value;
+    const doctorCards = document.querySelectorAll('.docs_container_block');
+
+    doctorCards.forEach(card => {
+        const specializationText = card.querySelector('p').textContent.toLowerCase();
+        const mappedSpecialization = specializationMapping[selectedSpecialization] || "";
+
+        if (selectedSpecialization === "" || specializationText.includes(mappedSpecialization)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+
+
+document.getElementById('specialization-select').addEventListener('change', function() {
+    const selectedSpecialization = this.value;
+    const showMoreElement = document.querySelector('.show_more2'); // Находим элемент .show_more2
+
+    // Если выбрано пустое значение (первый option)
+    if (selectedSpecialization === "") {
+        showMoreElement.style.opacity = '1'; // Делаем элемент видимым
+        showMoreElement.style.pointerEvents = 'auto'; // Делаем элемент кликабельным
+    } else {
+        showMoreElement.style.opacity = '0'; // Делаем элемент полностью прозрачным
+        showMoreElement.style.pointerEvents = 'none'; // Отключаем взаимодействие с элементом
+    }
+});
 
 
 </script>

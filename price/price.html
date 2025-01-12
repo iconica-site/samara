@@ -137,7 +137,7 @@
                 <div class="list_find_block_search">
                     <input type="text" placeholder="Название услуги">
 
-                    <a class="iconFind" href=""><i class="fi fi-rr-search"></i></a>
+                    <a class="iconFind" href="javascript:void[0]"><i class="fi fi-rr-search"></i></a>
                 </div>
 
             </div>
@@ -4105,6 +4105,72 @@ popupOverlay.addEventListener('click', (event) => {
         closePopupFunc();
     }
 });
+
+
+
+
+
+
+
+////// поиск
+// Находим элементы
+const searchInput = document.querySelector('.list_find_block_search input');
+const searchButton = document.querySelector('.iconFind');
+const servicesBlocks = document.querySelectorAll('.price-block-with-service'); // Находим все блоки `.price-block-with-service`
+
+// Создаем элемент для сообщения (один раз)
+const noResultsMessage = document.createElement('div');
+noResultsMessage.textContent = 'Ничего не найдено, попробуйте еще раз.';
+noResultsMessage.style.display = 'none'; // Скрываем по умолчанию
+noResultsMessage.style.textAlign = 'center'; // Центрируем текст
+noResultsMessage.style.marginTop = '20px';
+noResultsMessage.style.color = 'gray';
+noResultsMessage.style.fontSize = '16px';
+noResultsMessage.style.fontStyle = 'italic';
+document.body.appendChild(noResultsMessage); // Добавляем сообщение в конец страницы
+
+// Функция поиска
+function filterServices() {
+    const query = searchInput.value.trim().toLowerCase(); // Получаем запрос в нижнем регистре
+    let hasAnyResults = false; // Глобальный флаг, чтобы проверить, найден ли хотя бы один элемент
+
+    // Обрабатываем каждый блок .price-block-with-service
+    servicesBlocks.forEach(block => {
+        const serviceTitle = block.querySelector('h2'); // Находим h2 в текущем блоке
+        let hasResultsInBlock = false; // Флаг для проверки, есть ли совпадения в текущем блоке
+
+        if (serviceTitle) {
+            const serviceName = serviceTitle.textContent.toLowerCase(); // Имя услуги в нижнем регистре
+
+            if (serviceName.includes(query)) {
+                block.style.display = 'block'; // Показываем блок
+                hasResultsInBlock = true; // Устанавливаем флаг для текущего блока
+                hasAnyResults = true; // Устанавливаем глобальный флаг
+            } else {
+                block.style.display = 'none'; // Скрываем блок
+            }
+        }
+    });
+
+    // Управляем глобальным сообщением
+    if (hasAnyResults) {
+        noResultsMessage.style.display = 'none'; // Скрываем сообщение
+    } else {
+        noResultsMessage.style.display = 'block'; // Показываем сообщение
+    }
+}
+
+// Привязываем обработчик к кнопке
+searchButton.addEventListener('click', filterServices);
+
+// Также добавляем обработчик на нажатие Enter
+searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        filterServices();
+    }
+});
+
+
 
 </script>
 
