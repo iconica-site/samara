@@ -4133,6 +4133,19 @@ noResultsMessage.style.fontSize = '16px';
 noResultsMessage.style.fontStyle = 'italic';
 document.body.appendChild(noResultsMessage); // Добавляем сообщение в конец страницы
 
+// Функция для выделения текста
+function highlightText(element, query) {
+    const text = element.textContent;
+    const regex = new RegExp(`(${query})`, 'gi'); // Создаем регулярное выражение для поиска
+    const highlightedText = text.replace(regex, '<span style="color: rgb(92, 186, 234);">$1</span>'); // Заменяем найденный текст на <span>
+    element.innerHTML = highlightedText; // Обновляем содержимое элемента
+}
+
+// Функция для сброса выделения
+function resetHighlight(element) {
+    element.innerHTML = element.textContent; // Убираем все HTML-теги, оставляя только текст
+}
+
 // Функция поиска
 function filterServices() {
     const query = searchInput.value.trim().toLowerCase(); // Получаем запрос в нижнем регистре
@@ -4141,18 +4154,37 @@ function filterServices() {
     // Обрабатываем каждый блок .price-block-with-service
     servicesBlocks.forEach(block => {
         const serviceTitle = block.querySelector('h2'); // Находим h2 в текущем блоке
+        const serviceNameElements = block.querySelectorAll('p.price-service-name'); // Находим все p с классом price-service-name
         let hasResultsInBlock = false; // Флаг для проверки, есть ли совпадения в текущем блоке
 
+        // Сбрасываем выделение для всех элементов перед новым поиском
         if (serviceTitle) {
-            const serviceName = serviceTitle.textContent.toLowerCase(); // Имя услуги в нижнем регистре
+            resetHighlight(serviceTitle); // Сбрасываем выделение для h2
+        }
+        serviceNameElements.forEach(element => {
+            resetHighlight(element); // Сбрасываем выделение для p.price-service-name
+        });
 
-            if (serviceName.includes(query)) {
-                block.style.display = 'block'; // Показываем блок
-                hasResultsInBlock = true; // Устанавливаем флаг для текущего блока
-                hasAnyResults = true; // Устанавливаем глобальный флаг
-            } else {
-                block.style.display = 'none'; // Скрываем блок
+        // Проверяем h2
+        if (serviceTitle && serviceTitle.textContent.toLowerCase().includes(query)) {
+            highlightText(serviceTitle, query); // Подсвечиваем найденный текст в h2
+            hasResultsInBlock = true;
+        }
+
+        // Проверяем все p с классом price-service-name
+        serviceNameElements.forEach(element => {
+            if (element.textContent.toLowerCase().includes(query)) {
+                highlightText(element, query); // Подсвечиваем найденный текст в p.price-service-name
+                hasResultsInBlock = true;
             }
+        });
+
+        // Управляем отображением блока
+        if (hasResultsInBlock) {
+            block.style.display = 'block'; // Показываем блок
+            hasAnyResults = true; // Устанавливаем глобальный флаг
+        } else {
+            block.style.display = 'none'; // Скрываем блок
         }
     });
 
@@ -4173,7 +4205,6 @@ searchInput.addEventListener('keypress', (event) => {
         filterServices();
     }
 });
-
 
 
 </script>
