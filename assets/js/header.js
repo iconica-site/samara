@@ -5,6 +5,8 @@ let header = document.createElement('header');
 header.innerHTML = `
 <nav id="topHeader">
 <div class="header_icons">
+
+<!--
     <div class="header_icons_block">
         <a href="../index.html">
             <div>
@@ -13,7 +15,33 @@ header.innerHTML = `
             </div>
             <img src="../assets/img/logo.png" alt="">
         </a>
-    </div>
+    </div> -->
+
+    <div class="header_icons_block">
+                    <a href="../index.html">
+                        <!-- <div>
+                            <img src="../assets/img/sert1.png" alt="">
+                            <img src="../assets/img/sert2.png" alt="">
+                        </div>
+                        <img src="../assets/img/logo.png" alt=""> -->
+
+                        
+
+                        <div class="burger_logo_block ">
+                            <img class="brg_logo1" src="../assets/img/logo.png" alt="">
+                            <div class="burger_logo_block2">
+                                <img class="brg_logo2" src="../assets/img/sert1.png" alt="">
+                                <img class="brg_logo2" src="../assets/img/sert2.png" alt="">
+                            </div>
+                        </div>
+
+                       
+
+
+                    </a>
+
+
+                </div>
 
 
     <div class="header_icons_block">
@@ -106,7 +134,10 @@ header.innerHTML = `
 </div>
 </nav>
 <div class="nav_burger_block">
-<div class="burgerlogo">
+
+
+    <!--
+    <div class="burgerlogo">
 
     <div class="burger_logo_block ">
         <img class="brg_logo1" src="../assets/img/logo.png" alt="">
@@ -121,7 +152,7 @@ header.innerHTML = `
         <p>Государственное бюджетное учреждение здравоохранения Самарской области</p>
     </div>
 
-</div>
+</div> -->
 
 <div class="burger_content">
     <div class="header_search header_search_burger">
