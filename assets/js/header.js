@@ -293,7 +293,7 @@ header.innerHTML = `
 
 
 
-    <div class="header_search header_search_burger">
+    <div style="opacity:0;" class="header_search header_search_burger">
         <input class="burger_input" placeholder="Поиск по сайту" type="text">
         <button class="brgr_btn_srch">
             <img src="../assets/img/input_search.png" alt="">
