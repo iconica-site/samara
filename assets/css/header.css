@@ -201,6 +201,8 @@ nav {
     margin: 0 auto; 
     margin-top: 30px;
 
+    /* flex-direction: row-reverse; */
+
     
 }
 
@@ -594,11 +596,52 @@ nav {
     .header_right_menu {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
     .header_icons_block {
-        display: none;
+        /* display: none; */
+
+        font-size: 10px;
     }
+
+    .header_icons_block p:nth-child(1) {
+        font-size: 12px;
+    }
+
+    .header_icons_block p:nth-child(2) {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
     .header_icons_block div {
-        display: none;
+        /* display: none; */
     }
     .header_icons_block_mobile {
         display: flex;
@@ -807,4 +850,19 @@ nav {
 
 #callButton {
     filter: drop-shadow(2px 4px 6px black);
+}
+
+
+
+
+@media(max-width:950px) {
+    .header_bottom_menu {
+        display: none;
+    }
+    .header_services_mobile {
+        padding-top: 0;
+    }
+    .breadcrumb {
+        margin-top: 40px;
+    }
 }
