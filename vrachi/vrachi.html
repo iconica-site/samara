@@ -314,7 +314,7 @@
             </div>
         
             <!-- Карточка 26 -->
-            <div class="docs_container_block">
+            <div id="card1" class="docs_container_block">
                 <div class="swiper-slide_block">
                     <img src="../vrachi-detail/img/26.jpg" alt="">
                     <h4>Максимова Зульфия <br> Рифатовна</h4>
@@ -356,7 +356,7 @@
         </div>
         
         <!-- Карточка 31 -->
-        <div class="docs_container_block">
+        <div id="card3" class="docs_container_block">
             <div class="swiper-slide_block">
                 <img src="../vrachi-detail/img/31.jpg" alt="">
                 <h4>Альнуров Габдель-Мажит Хайржанович</h4>
@@ -418,7 +418,7 @@
         </div>
         
         <!-- Карточка 41 -->
-        <div class="docs_container_block">
+        <div id="card6" class="docs_container_block">
             <div class="swiper-slide_block">
                 <img src="../vrachi-detail/img/41.jpg" alt="">
                 <h4>Москалева Татьяна <br> Александровна</h4>
@@ -463,7 +463,7 @@
 
 
         <!-- Карточка 33 -->
-        <div class="docs_container_block">
+        <div id="card4" class="docs_container_block">
             <div class="swiper-slide_block">
                 <img src="../vrachi-detail/img/33.jpg" alt="">
                 <h4>Дорогойченкова Оксана Петровна</h4>
@@ -473,7 +473,7 @@
         </div>
         
         <!-- Карточка 34 -->
-        <div class="docs_container_block">
+        <div id="suhinaEk" class="docs_container_block">
             <div class="swiper-slide_block">
                 <img src="../vrachi-detail/img/34.JPG" alt="">
                 <h4>Сухина Екатерина <br> Анатольевна</h4>
@@ -483,7 +483,7 @@
         </div>
         
         <!-- Карточка 35 -->
-        <div class="docs_container_block">
+        <div id="card2" class="docs_container_block">
             <div class="swiper-slide_block">
                 <img src="../vrachi-detail/img/35.jpg" alt="">
                 <h4>Фролова Ирина <br> Петровна</h4>
@@ -493,7 +493,7 @@
         </div>
         
         <!-- Карточка 36 -->
-        <div class="docs_container_block">
+        <div id="card5" class="docs_container_block">
             <div class="swiper-slide_block">
                 <img src="../vrachi-detail/img/36.JPG" alt="">
                 <h4>Карпюк Наталья <br> Михайловна</h4>
@@ -579,9 +579,6 @@ swiperSlideBlocks.forEach(block => {
     
 });
 
-
-
-
 const specializationMapping = {
     "therapy": "терапия",
     "neurology": "неврология",
@@ -607,18 +604,73 @@ const specializationMapping = {
 document.getElementById('specialization-select').addEventListener('change', function() {
     const selectedSpecialization = this.value;
     const doctorCards = document.querySelectorAll('.docs_container_block');
+    const suhinaEkCard = document.getElementById('suhinaEk'); // Костыль: карточка Сухиной
+    const card1 = document.getElementById('card1'); // Костыль: карточка 1 для кинезеотейпирования
+    const card2 = document.getElementById('card2'); // Костыль: карточка 2 для кинезеотейпирования
+    const card3 = document.getElementById('card3'); // Костыль: карточка 3 для физиотерапии и массажа
+    const card4 = document.getElementById('card4'); // Костыль: карточка 4 для физиотерапии и массажа
+    const card5 = document.getElementById('card5'); // Костыль: карточка 5 для физиотерапии и массажа
+    const card6 = document.getElementById('card6'); // Костыль: карточка 6 для услуг психолога
 
     doctorCards.forEach(card => {
-        const specializationText = card.querySelector('p').textContent.toLowerCase();
+        const specializationText = card.querySelector('p')?.textContent.toLowerCase() || "";
         const mappedSpecialization = specializationMapping[selectedSpecialization] || "";
 
-        if (selectedSpecialization === "" || specializationText.includes(mappedSpecialization)) {
+        // Костыль: если выбрана "дневной стационар", показываем только карточку Сухиной
+        if (selectedSpecialization === "day-hospital") {
+            if (card === suhinaEkCard) {
+                card.style.display = 'block'; // Показываем карточку Сухиной
+            } else {
+                card.style.display = 'none'; // Скрываем все остальные карточки
+            }
+        } 
+        // Костыль: если выбрана "кинезеотейпирование", показываем только card1 и card2
+        else if (selectedSpecialization === "kinesio-taping") {
+            if (card === card1 || card === card2) {
+                card.style.display = 'block'; // Показываем card1 и card2
+            } else {
+                card.style.display = 'none'; // Скрываем все остальные карточки
+            }
+        }
+        // Костыль: если выбрана "физиотерапия и массаж", показываем только card3, card4 и card5
+        else if (selectedSpecialization === "physiotherapy-massage") {
+            if (card === card3 || card === card4 || card === card5) {
+                card.style.display = 'block'; // Показываем card3, card4 и card5
+            } else {
+                card.style.display = 'none'; // Скрываем все остальные карточки
+            }
+        }
+        // Костыль: если выбрана "услуги психолога", показываем только card6
+        else if (selectedSpecialization === "psychologist") {
+            if (card === card6) {
+                card.style.display = 'block'; // Показываем card6
+            } else {
+                card.style.display = 'none'; // Скрываем все остальные карточки
+            }
+        }
+        // Исключение: если выбрана "терапия", не показывать "физиотерапия"
+        else if (selectedSpecialization === "therapy" && specializationText.includes("физиотерапия")) {
+            card.style.display = 'none';
+        } 
+        // Исключение: если выбрана "ультразвуковая и функциональная диагностика", показывать "ультразвуковая диагностика"
+        else if (selectedSpecialization === "ultrasound-diagnostics" && 
+                 (specializationText.includes("ультразвуковая диагностика") || 
+                  specializationText.includes("ультразвуковая и функциональная диагностика"))) {
+            card.style.display = 'block';
+        }
+        // Основная логика фильтрации
+        else if (selectedSpecialization === "" || specializationText.includes(mappedSpecialization)) {
             card.style.display = 'block';
         } else {
             card.style.display = 'none';
         }
     });
 });
+
+
+
+
+
 
 
 document.getElementById('specialization-select').addEventListener('change', function() {
