@@ -26,6 +26,7 @@ nav {
 }
 
 .header_icons {
+    margin-top: 5px;
     max-width: 435px;
     width: 100%;
     height: 81px;
@@ -53,8 +54,8 @@ nav {
     justify-content: center;
 }
 .header_icons_block div img {
-    width: 38px;
-    height: 38px;
+    width: 45px;
+    height: 50px;
 }
 
 .header_icons_block p:nth-child(1) {
@@ -414,9 +415,12 @@ nav {
 .burger_logo_block2 {
     display: flex;
     justify-content: space-between;
+    margin-top: 2px;
 }
 .burger_logo_block div {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .burger_logo_block p:nth-child(1) {
     color: rgba(92, 186, 234, 1);
@@ -434,14 +438,14 @@ nav {
     height: 50px;
 }
 .brg_logo2 {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
 }
 
 
 
 .burger_content {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .burger_content input {
     background-color: #fff;
@@ -572,7 +576,7 @@ nav {
         display: none;
     }
     nav {
-        height: 70px;
+        height: 80px;
 
         /* position: absolute; */
         position: fixed;
