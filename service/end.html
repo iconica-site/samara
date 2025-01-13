@@ -144,57 +144,22 @@
 
                             <div class="swiper-slide">
                                 <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
+                                    <img style="    object-position: center 40%;" src="../vrachi-detail/img/17.jpg" alt="">
+                                    <h4>Бодрова Ольга <br> Александровна</h4>
+                                    <p>Эндокринология <br> Врач</p>
+                                    <a href="javascript:void(0)">Записаться на прием</a>
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
+                                    <img src="../vrachi-detail/img/18.jpg" alt="">
+                                    <h4>Захарова Оксана Владимировна</h4>
+                                    <p>Эндокринология <br> Врач</p>
+                                    <a href="javascript:void(0)">Записаться на прием</a>
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
-                                <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="swiper-slide_block">
-                                    <img src="/assets/img/doctor.png" alt="">
-                                    <h4>Людмила Германовна Ткачук</h4>
-                                    <p>Заведующая отделением - врач общей практики высшей квалификационной категории</p>
-                                    <a href="">Записаться на прием</a>
-                                </div>
-                            </div>
 
 
 
@@ -256,6 +221,25 @@
         document.querySelector('.next').addEventListener('click', function () {
             swiper.slideNext(); // Переход к следующему слайду
         });
+
+
+
+            // Находим все элементы с классом "swiper-slide_block"
+const swiperSlideBlocks = document.querySelectorAll('.swiper-slide_block a');
+
+// Добавляем обработчик клика к каждому из них
+swiperSlideBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+        // Находим элемент для имитации клика
+        const targetElement = document.querySelector('.header_link_form.header_header_link_form');
+        if (targetElement) {
+            targetElement.click(); // Имитация клика
+        } else {
+            console.error('Элемент для имитации клика не найден.');
+        }
+    });
+});
+
 
 
 
