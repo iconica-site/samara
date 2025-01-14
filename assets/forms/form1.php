@@ -12,9 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                "Content-Type: text/plain; charset=UTF-8\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "Спасибо за ваше сообщение! Мы свяжемся с вами скоро.";
+        echo 'Спасибо! <a href="/">Вернуться на главную</a>';
     } else {
-        echo "Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте снова.";
+        echo 'Ошибка. <a href="/">Попробуйте снова</a>';
     }
 }
 ?>

@@ -361,7 +361,7 @@ header.innerHTML = `
     class="popUpMain">
     
 
-    <form id="formix" class="mainForm test" style="display: flex; flex-direction: column; align-items: center;" method="post" action="../assets/forms/form2.php">
+    <form id="formix" class="mainForm" style="display: flex; flex-direction: column; align-items: center;" method="POST" action="../assets/forms/form2.php">
             <span style="display: flex;  padding-top: 40px; max-width: 500px; width: 100%;">
                 <p
                     style="color: white; text-align: center; font-size: 30px; font-weight: 500; max-width: 500px; width: 100%;">
@@ -379,13 +379,13 @@ header.innerHTML = `
                 температура, <br> и вы не контактировали в течение последних 14 дней с <br> лицами, у которых
                 лабораторно
                 подтвержден диагноз<br> COVID-19</p>
-            <input
+            <input name="name"
                 style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 30px; padding-left: 20px; box-sizing: border-box;"
                 type="text" placeholder="Имя*" required>
-            <input
+            <input name="phone"
                 style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 10px; padding-left: 20px; box-sizing: border-box;"
                 type="text" placeholder="Телефон*" required>
-            <input
+            <input name="email"
                 style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 10px; padding-left: 20px; box-sizing: border-box;"
                 type="text" placeholder="Почта">
             <button type="submit"
