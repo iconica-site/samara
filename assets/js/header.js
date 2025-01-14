@@ -361,39 +361,42 @@ header.innerHTML = `
     class="popUpMain">
     
 
-    <form class="mainForm" style="display: flex; flex-direction: column; align-items: center;" action="">
-        <span style="display: flex;  padding-top: 40px; max-width: 500px; width: 100%;">
-            <p
-                style="color: white; text-align: center; font-size: 30px; font-weight: 500; max-width: 500px; width: 100%;">
-                Запись на прием</p>
-            <div style="cursor: pointer;" class="cross"></div>
-        </span>
+    <form id="formix" class="mainForm test" style="display: flex; flex-direction: column; align-items: center;" method="post" action="../assets/forms/form2.php">
+            <span style="display: flex;  padding-top: 40px; max-width: 500px; width: 100%;">
+                <p
+                    style="color: white; text-align: center; font-size: 30px; font-weight: 500; max-width: 500px; width: 100%;">
+                    Запись на прием</p>
+                <div style="cursor: pointer;" class="cross"></div>
+            </span>
 
-        <p
-            style="color: white; font-size: 18px; max-width: 500px; width: 100%; text-align: center; padding-top: 30px; line-height: 21px;">
-            Перезвоним в рабочее время в течении 5 минут.</p>
-        <p
-            style="color: white; font-size: 16px; max-width: 500px; width: 100%; text-align: center; padding-top: 30px; font-weight: 200; line-height: 19px;">
-            Записываясь на амбулаторный прием, вы подтверждаете, что <br> у вас отсутствуют признаки ОРВИ, повышенная
-            температура, <br> и вы не контактировали в течение последних 14 дней с <br> лицами, у которых лабораторно
-            подтвержден диагноз<br> COVID-19</p>
-        <input
-            style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 30px; padding-left: 20px; box-sizing: border-box;"
-            type="text" placeholder="Имя*" required>
-        <input
-            style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 10px; padding-left: 20px; box-sizing: border-box;"
-            type="text" placeholder="Телефон*" required>
-        <input
-            style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 10px; padding-left: 20px; box-sizing: border-box;"
-            type="text" placeholder="Почта">
-        <button type="submit"
-            style="max-width: 500px; width: 100%; color: rgba(108, 149, 255, 1); border-radius: 100px; font-size: 18px; height: 52px; border: none; margin-top: 20px; background-color: rgba(255, 255, 255, 1); cursor: pointer;">Записаться
-            на прием</button>
-        <span
-            style="font-family: Manrope, serif; margin-top: 10px; font-size: 14px; max-width: 500px; width: 100%; text-align: center; line-height: 14px; color: rgba(255, 255, 255, 0.692);">нажимая
-            кнопку, я соглашаюсь на обработку моих персональных данных, в соответствии с <a style="color: white;"
-                href="../Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">политикой конфиденциальности</a></span>
-    </form>
+            <p
+                style="color: white; font-size: 18px; max-width: 500px; width: 100%; text-align: center; padding-top: 30px; line-height: 21px;">
+                Перезвоним в рабочее время в течении 5 минут.</p>
+            <p
+                style="color: white; font-size: 16px; max-width: 500px; width: 100%; text-align: center; padding-top: 30px; font-weight: 200; line-height: 19px;">
+                Записываясь на амбулаторный прием, вы подтверждаете, что <br> у вас отсутствуют признаки ОРВИ,
+                повышенная
+                температура, <br> и вы не контактировали в течение последних 14 дней с <br> лицами, у которых
+                лабораторно
+                подтвержден диагноз<br> COVID-19</p>
+            <input
+                style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 30px; padding-left: 20px; box-sizing: border-box;"
+                type="text" placeholder="Имя*" required>
+            <input
+                style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 10px; padding-left: 20px; box-sizing: border-box;"
+                type="text" placeholder="Телефон*" required>
+            <input
+                style="background-color: rgba(255, 255, 255, 0.4); max-width: 480px; width: 100%; height: 47px; border: none; border-radius: 10px; margin-top: 10px; padding-left: 20px; box-sizing: border-box;"
+                type="text" placeholder="Почта">
+            <button type="submit"
+                style="max-width: 500px; width: 100%; color: rgba(108, 149, 255, 1); border-radius: 100px; font-size: 18px; height: 52px; border: none; margin-top: 20px; background-color: rgba(255, 255, 255, 1); cursor: pointer;">Записаться
+                на прием</button>
+            <span
+                style="font-family: Manrope, serif; margin-top: 10px; font-size: 14px; max-width: 500px; width: 100%; text-align: center; line-height: 14px; color: rgba(255, 255, 255, 0.692);">нажимая
+                кнопку, я соглашаюсь на обработку моих персональных данных, в соответствии с <a style="color: white;"
+                    href="./Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">политикой
+                    конфиденциальности</a></span>
+        </form>
 </div>
 
         <div class="call-button" id="callButton" style="position: fixed; right: 20px; bottom: 20px; z-index: 9999999; cursor: pointer;">
@@ -638,4 +641,7 @@ burger_click.addEventListener('click', function() {
 
 
         
-        
+       
+
+
+

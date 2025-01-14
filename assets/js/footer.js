@@ -92,12 +92,17 @@ document.addEventListener("DOMContentLoaded", () => {
         <span class="close-btn" id="closePopup">&times;</span>
        <!-- <p style="color: rgba(92, 186, 234, 1); font-size: 16px;">СГП №6 Внебюджетное отделение Самара</p> -->
         <p>Запись на прием</p>
-        <form id="popupForm">
-            <input type="text" placeholder="Как вас зовут?" required>
-            <input type="tel" placeholder="Номер телефона" required>
-            <textarea placeholder="Ваш вопрос" rows="4" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
+        <form id="popupForm" action="../assets/forms/form1.php" method="POST">
+        <input type="text" name="name" placeholder="Как вас зовут?" required
+            style="width: 100%; margin-bottom: 15px; padding: 10px; font-size: 14px;">
+        <input type="tel" name="phone" placeholder="Номер телефона" required
+            style="width: 100%; margin-bottom: 15px; padding: 10px; font-size: 14px;">
+        <textarea name="question" placeholder="Ваш вопрос" rows="4" required
+            style="width: 100%; margin-bottom: 15px; padding: 10px; font-size: 14px; resize: none;"></textarea>
+        <button type="submit"
+            style="width: 100%; margin-bottom: 15px; padding: 10px; background: rgba(92, 186, 234, 1); color: white; border: none; cursor: pointer; transition: 0.15s;">Отправить</button>
+    </form>
+
     </div>
 </div>
 
@@ -167,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+<!--
 <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
 
 
@@ -210,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 href="./Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh/Politika_v_otnoshenii_obrabotki_personal_nyh_dannyh.html">политикой конфиденциальности</a></span>
     </form>
 </div>
-
+-->
 
 
 
@@ -245,12 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Обработка отправки формы
-    document.getElementById('popupForm').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Форма отправлена!');
-        document.getElementById('popupOverlay').style.display = 'none';
-    });
+    
 
 
 
